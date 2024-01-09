@@ -1564,7 +1564,6 @@ img {
 }
 .p_txt_opgaveformulering_tema4 {
   padding-top: 5%;
-  line-height: 25px;
 }
 
 .underoverskrift1_3_tema4_div {
@@ -1620,6 +1619,9 @@ img {
   font-size: 2.4rem;
   text-transform: uppercase;
   word-wrap: break-word; /* Tilføjet denne regel for linjeskift i lange ord */
+}
+.p_txt_opgaveformulering_tema4 {
+  line-height: 25px;
 }
 
 /* layout */
