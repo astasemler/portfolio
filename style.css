@@ -106,7 +106,7 @@ footer {
   padding-right: 4%;
   letter-spacing: 7px;
 }
-
+/* som sagt i index.html fik jeg hjælp af chat til at lave denne slags linjer da jeg ikke kendte til <span> */
 .linje_forside {
   border-bottom: 3px solid #d9d7cc;
   width: 122%; /* Juster bredden efter behov */
@@ -248,7 +248,7 @@ img {
   grid-row: 2 / span 2;
   grid-column: 1 / span 4;
   border-bottom: 5px solid #d9303e;
-  width: 100%; /* Juster bredden efter behov */
+  width: 100%;
   display: block;
   padding-top: 2%;
   z-index: 2;
@@ -274,7 +274,7 @@ img {
   grid-row: 1;
   grid-column: 1 / span 4;
   border-bottom: 5px solid #d9d7cc;
-  width: 100%; /* Juster bredden efter behov */
+  width: 100%;
   display: block;
 }
 
@@ -311,7 +311,7 @@ img {
   grid-row: 11;
   grid-column: 1 / span 3;
   border-bottom: 5px solid #d9d7cc;
-  width: 100%; /* Juster bredden efter behov */
+  width: 100%;
 }
 
 .cv_underoverskrift3 {
@@ -334,7 +334,7 @@ img {
   grid-row: 26;
   grid-column: 1 / span 3;
   border-bottom: 5px solid #d9d7cc;
-  width: 100%; /* Juster bredden efter behov */
+  width: 100%;
 }
 
 .cv_wrapper2 {
@@ -385,7 +385,7 @@ img {
 
 .linje4_cv {
   border-bottom: 5px solid#d9303e;
-  width: 100%; /* Juster bredden efter behov */
+  width: 100%;
   display: none;
 }
 
@@ -484,7 +484,7 @@ img {
   grid-row: 3;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9d7cc;
-  width: 80%; /* Juster bredden efter behov */
+  width: 80%;
 }
 /* layout */
 .underoverskrift1_introuge {
@@ -641,7 +641,7 @@ img {
   grid-row: 3;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9d7cc;
-  width: 100%; /* Juster bredden efter behov */
+  width: 100%;
 }
 /* layout */
 .underoverskrift1_g_web {
@@ -672,7 +672,7 @@ img {
   grid-row: 7;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9d7cc;
-  width: 100%; /* Juster bredden efter behov */
+  width: 100%;
 }
 
 .tema2_wrapper2 {
@@ -707,7 +707,7 @@ img {
   grid-row: 14;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9d7cc;
-  width: 100%; /* Juster bredden efter behov */
+  width: 100%;
 }
 
 .tema2_wrapper3 {
@@ -740,7 +740,7 @@ img {
   grid-row: 2;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9303e;
-  width: 100%; /* Juster bredden efter behov */
+  width: 100%;
 }
 
 /* STUDIESTARTSPRØVE */ /* STUDIESTARTSPRØVE */ /* STUDIESTARTSPRØVE */ /* STUDIESTARTSPRØVE */ /* STUDIESTARTSPRØVE */
@@ -805,7 +805,7 @@ img {
   grid-row: 14;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9d7cc;
-  width: 100%; /* Juster bredden efter behov */
+  width: 100%;
 }
 
 /* GALLERI TIL OPGAVE */ /* GALLERI TIL OPGAVE */ /* GALLERI TIL OPGAVE */ /* GALLERI TIL OPGAVE */ /* GALLERI TIL OPGAVE */
@@ -868,7 +868,7 @@ img {
   grid-row: 32;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9303e;
-  width: 100%; /* Juster bredden efter behov */
+  width: 100%;
 }
 
 /* TEMA 3 */ /* TEMA 3 */ /* TEMA 3 */ /* TEMA 3 */ /* TEMA 3 */ /* TEMA 3 */ /* TEMA 3 */ /* TEMA 3 */ /* TEMA 3 */ /* TEMA 3 */ /* TEMA 3 */
@@ -898,7 +898,7 @@ img {
   grid-row: 3;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9d7cc;
-  width: 100%; /* Juster bredden efter behov */
+  width: 100%;
 }
 /* layout */
 .underoverskrift1_UX_UI {
@@ -929,7 +929,7 @@ img {
   grid-row: 7;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9d7cc;
-  width: 100%; /* Juster bredden efter behov */
+  width: 100%;
 }
 
 .tema3_wrapper2 {
@@ -963,7 +963,7 @@ img {
   grid-row: 14;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9d7cc;
-  width: 100%; /* Juster bredden efter behov */
+  width: 100%;
 }
 
 .tema3_wrapper3 {
@@ -1000,7 +1000,7 @@ img {
   grid-row: 4;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9303e;
-  width: 100%; /* Juster bredden efter behov */
+  width: 100%;
 }
 
 .tema3_wrapper3_pp {
@@ -1072,7 +1072,7 @@ img {
   grid-row: 16;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9d7cc;
-  width: 100%; /* Juster bredden efter behov */
+  width: 100%;
 }
 
 .tema3_wrapper4_powerpoint {
@@ -1215,7 +1215,7 @@ img {
   grid-row: 39;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9303e;
-  width: 100%; /* Juster bredden efter behov */
+  width: 100%;
 }
 
 .tema3_wrapper3_dokumentation {
@@ -1284,7 +1284,7 @@ img {
   grid-row: 12;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9d7cc;
-  width: 100%; /* Juster bredden efter behov */
+  width: 100%;
 }
 
 .tema3_wrapper5_dokumentation {
@@ -1392,7 +1392,7 @@ img {
   grid-row: 28;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9303e;
-  width: 100%; /* Juster bredden efter behov */
+  width: 100%;
 }
 
 /* TEMA 4 */ /* TEMA 4 */ /* TEMA 4 */ /* TEMA 4 */ /* TEMA 4 */ /* TEMA 4 */ /* TEMA 4 */ /* TEMA 4 */ /* TEMA 4 */ /* TEMA 4 */ /* TEMA 4 */
@@ -1424,7 +1424,7 @@ img {
   grid-row: 3;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9d7cc;
-  width: 100%; /* Juster bredden efter behov */
+  width: 100%;
 }
 
 /* layout */
@@ -1455,7 +1455,7 @@ img {
   grid-row: 8;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9d7cc;
-  width: 100%; /* Juster bredden efter behov */
+  width: 100%;
 }
 
 .tema4_wrapper2 {
@@ -1491,7 +1491,7 @@ img {
   grid-row: 23;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9d7cc;
-  width: 100%; /* Juster bredden efter behov */
+  width: 100%;
 }
 
 .tema4_wrapper3 {
@@ -1527,7 +1527,7 @@ img {
   grid-row: 3;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9303e;
-  width: 100%; /* Juster bredden efter behov */
+  width: 100%;
 }
 
 /* 04.04.01 animations opgave spil */ /* 04.04.01 animations opgave spil */ /* 04.04.01 animations opgave spil */ /* 04.04.01 animations opgave spil */
@@ -1598,7 +1598,7 @@ img {
   grid-row: 17;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9d7cc;
-  width: 100%; /* Juster bredden efter behov */
+  width: 100%;
 }
 
 .tema4_wrapper4_crowcatch {
@@ -1706,14 +1706,14 @@ img {
   grid-row: 39;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9303e;
-  width: 100%; /* Juster bredden efter behov */
+  width: 100%;
 }
 
 .linje6_tema4 {
   grid-row: 29;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9303e;
-  width: 100%; /* Juster bredden efter behov */
+  width: 100%;
 }
 
 /* TEMA 5 */
@@ -1743,7 +1743,7 @@ img {
   grid-row: 3;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9d7cc;
-  width: 100%; /* Juster bredden efter behov */
+  width: 100%;
 }
 /* layout */
 .underoverskrift1_indhold {
@@ -1774,7 +1774,7 @@ img {
   grid-row: 8;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9d7cc;
-  width: 100%; /* Juster bredden efter behov */
+  width: 100%;
 }
 
 .tema5_wrapper2 {
@@ -1808,7 +1808,7 @@ img {
   grid-row: 15;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9d7cc;
-  width: 100%; /* Juster bredden efter behov */
+  width: 100%;
 }
 
 .tema5_wrapper3 {
@@ -1849,7 +1849,7 @@ img {
   grid-row: 4;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9303e;
-  width: 100%; /* Juster bredden efter behov */
+  width: 100%;
 }
 
 .tema5_wrapper3_videosite {
@@ -1912,7 +1912,7 @@ img {
   grid-row: 16;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9d7cc;
-  width: 100%; /* Juster bredden efter behov */
+  width: 100%;
 }
 
 .tema5_wrapper3_2_videosite_billeder {
@@ -1966,10 +1966,10 @@ img {
   grid-row: 13;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9d7cc;
-  width: 100%; /* Juster bredden efter behov */
+  width: 100%;
 }
 
-/* VIDEOSITE VIDEOSITEVIDEOSITEVIDEOSITEVIDEOSITEVIDEOSITEVIDEOSITEVIDEOSITEVIDEOSITEVIDEOSITEVIDEOSITEVIDEOSITEVIDEOSITEVIDEOSITE */
+/* VIRKSOMHEDSSITE */
 .tema5_wrapper4_virksomhedssite {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -2032,7 +2032,7 @@ img {
   grid-row: 17;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9d7cc;
-  width: 100%; /* Juster bredden efter behov */
+  width: 100%;
 }
 
 /* VIRKSOMHEDSSITE GALLERI / BILLEDER */
@@ -2103,7 +2103,7 @@ img {
   grid-row: 17;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9303e;
-  width: 100%; /* Juster bredden efter behov */
+  width: 100%;
 }
 
 /* Stil for mindre skærme (mobil) */
@@ -2149,7 +2149,7 @@ img {
 
   .linje_forside {
     border-bottom: 3px solid #d9d7cc;
-    width: 122%; /* Juster bredden efter behov */
+    width: 122%;
     display: block;
     padding-top: 2%;
   }
@@ -2475,7 +2475,7 @@ img {
     grid-row: 4;
   }
 }
-
+/* for at lave @media har jeg brugt chat-gtp*/
 @media screen and (min-width: 1025px) {
   main {
     margin: 0 auto;
@@ -2523,7 +2523,7 @@ img {
 
   .linje_forside {
     border-bottom: 5px solid #d9d7cc;
-    width: 70%; /* Juster bredden efter behov */
+    width: 70%;
     display: block;
     padding-top: 2%;
   }
@@ -2578,7 +2578,7 @@ img {
 
   .linje_forside2 {
     border-bottom: 5px solid #c52727;
-    width: 100%; /* Juster bredden efter behov */
+    width: 100%;
     display: block;
   }
 
@@ -2603,7 +2603,7 @@ img {
   /* her har jeg fået hjælp af Chat-GTP til at få begge billeder placeret og rykket rundt som jeg ønskede, bl.a. ved at rbuge position, left,  top, etc */
   /* Juster bredden af billedet inde i .om_mig_portaet1 klasse */
   .om_mig_portaet1 img {
-    width: 84%; /* Juster bredden efter behov */
+    width: 84%;
     max-width: 100%; /* For at sikre, at bredden ikke overstiger oprindelig størrelse */
     height: auto; /* Bevarer billedets proportioner */
     display: block; /* For at håndtere eventuelle marginer eller padding korrekt */
@@ -3064,7 +3064,7 @@ img {
     grid-row: 5;
     grid-column: 1 / span 4;
     border-bottom: 10px solid #d9303e;
-    width: 100%; /* Juster bredden efter behov */
+    width: 100%;
   }
 
   .tema3_wrapper3_pp {
