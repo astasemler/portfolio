@@ -1,0 +1,3210 @@
+/* RESETTER AL MARGIN + PADDING */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  max-width: 1350px;
+}
+
+/* fontface */
+@font-face {
+  font-family: "grand_stylusregular";
+  src: url("fonts/webfontkit-20240102-060307/grand_stylus-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "respirablack";
+  src: url("fonts/webfontkit-20240102-060307/respira-black-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "poyntertextregular";
+  src: url("fonts/webfontkit-20240102-060307/poyntertext_regular-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "poyntertext-romanoneregular";
+  src: url("fonts/webfontkit-20240102-060307/poyntertextromanone_regular-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #bfba9f;
+}
+
+h2 {
+  font-family: "poyntertext-romanoneregular";
+  letter-spacing: 5px;
+  font-size: 2rem;
+}
+h3 {
+  font-family: "poyntertext-romanoneregular";
+  letter-spacing: 5px;
+  font-size: 1.4rem;
+}
+p {
+  font-family: poyntertextregular;
+  letter-spacing: 3px;
+  font-size: 0.9rem;
+}
+
+.forside_wrapper1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.logo_forside a {
+  padding-left: 344%;
+  padding-top: 58%;
+  font-family: "grand_stylusregular";
+  display: block;
+  font-size: 3rem;
+  color: #d9d7cc;
+  text-decoration: none;
+}
+
+.overskrift_forside1 {
+  grid-row: 2;
+  grid-column: 1 / span 4;
+  color: #d9303e;
+  font-family: "respirablack";
+  font-size: 4.5rem;
+  padding-left: 5%;
+}
+
+.underoverskrift_forside1 {
+  grid-row: 2 / span 2;
+  grid-column: 2 / span 3;
+  color: #0d0d00;
+  font-family: "poyntertext-romanoneregular";
+  font-size: 1.2rem;
+  padding-left: 42%;
+  padding-top: 30%;
+  padding-right: 1%;
+}
+
+.underoverskrift_forside2 {
+  grid-row: 2 / span 2;
+  grid-column: 2 / span 3;
+  color: #0d0d00;
+  font-family: "poyntertext-romanoneregular";
+  font-size: 1.2rem;
+  direction: rtl;
+  padding-top: 30%;
+  padding-right: 4%;
+  letter-spacing: 7px;
+}
+
+.linje_forside {
+  border-bottom: 3px solid #d9d7cc;
+  width: 122%; /* Juster bredden efter behov */
+  display: block;
+  padding-top: 2%;
+}
+
+.forside_billede {
+  grid-row: 4 / span 3;
+  grid-column: 1 / span 5;
+  position: relative;
+  padding-top: 10%;
+  z-index: 1;
+}
+img {
+  width: 100%;
+  display: block;
+}
+.tusch {
+  position: absolute;
+  font-family: "grand_stylusregular";
+  color: #d9d7cc;
+  font-size: 3rem;
+  top: 40%; /* Juster denne værdi for at centrere lodret */
+  left: 10%; /* Juster denne værdi for at centrere vandret */
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center; /* Centrer teksten inden for sin container */
+  rotate: 21deg;
+  text-decoration: none;
+  animation: pulseAnimation 8s infinite;
+}
+
+@keyframes pulseAnimation {
+  0% {
+    /* transform: scale(0.8); vil formindske elementet med 20%.  */
+    transform: scale(0.8);
+    opacity: 1;
+  }
+  50% {
+    /* transform: scale(1.2); vil forstørre elementet med 20%.*/
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    /* transform: scale(0.8); vil formindske elementet med 20%.  */
+    transform: scale(0.8);
+    opacity: 1;
+  }
+}
+
+/* OM MIG SIDE */
+.om_mig_wrapper1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(27, auto);
+}
+
+.overskrift_om_mig1 {
+  grid-row: 1;
+  grid-column: 1 / span 4;
+  color: #d9303e;
+  font-family: "respirablack";
+  font-size: 4.5rem;
+  padding-left: 5%;
+  padding-top: 25%;
+}
+.om_mig_txt_portraet1 {
+  grid-row: 2;
+  grid-column: 1 / span 4;
+  font-family: "poyntertext-romanoneregular";
+  font-size: 1.2rem;
+  padding-left: 3%;
+  letter-spacing: 5px;
+}
+.om_mig_txt_portraet2 {
+  grid-row: 2;
+  grid-column: 1 / span 4;
+  font-family: "poyntertext-romanoneregular";
+  font-size: 1.2rem;
+  padding-left: 3%;
+  padding-top: 6%;
+  letter-spacing: 5px;
+}
+.om_mig_txt_portraet3 {
+  grid-row: 2;
+  grid-column: 1 / span 4;
+  font-family: "poyntertext-romanoneregular";
+  font-size: 1.2rem;
+  padding-left: 3%;
+  padding-top: 13%;
+  letter-spacing: 5px;
+}
+.om_mig_txt_portraet4 {
+  grid-row: 2;
+  grid-column: 1 / span 4;
+  font-family: "poyntertext-romanoneregular";
+  font-size: 1.2rem;
+  padding-left: 3%;
+  padding-top: 20%;
+  letter-spacing: 5px;
+}
+.om_mig_txt_portraet5 {
+  grid-row: 2;
+  grid-column: 1 / span 4;
+  font-family: "poyntertext-romanoneregular";
+  font-size: 1.2rem;
+  padding-left: 30%;
+  padding-top: 27%;
+  letter-spacing: 5px;
+}
+.om_mig_txt_portraet6 {
+  grid-row: 2;
+  grid-column: 1 / span 4;
+  font-family: "poyntertext-romanoneregular";
+  font-size: 1.2rem;
+  padding-left: 54%;
+  padding-top: 33%;
+  letter-spacing: 5px;
+}
+
+.om_mig_portaet1 {
+  grid-row: 2 / span 2;
+  grid-column: 1 / span 2;
+  width: 150%;
+  position: relative;
+  left: -37%;
+}
+.om_mig_portaet2 {
+  grid-row: 2 / span 2;
+  grid-column: 2 / span 2;
+  width: 75%;
+  position: relative;
+  padding-top: 109%;
+}
+
+.linje1_om_mig {
+  grid-row: 2 / span 2;
+  grid-column: 1 / span 4;
+  border-bottom: 5px solid #d9303e;
+  width: 100%; /* Juster bredden efter behov */
+  display: block;
+  padding-top: 2%;
+  z-index: 2;
+}
+
+.cv_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(27, auto);
+  gap: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.cv_overskrift {
+  grid-row: 1;
+  grid-column: 1 / span 3;
+  color: #d9303e;
+  font-family: "respirablack";
+  font-size: 4.5rem;
+  padding-top: 10%;
+}
+.linje1_cv {
+  grid-row: 1;
+  grid-column: 1 / span 4;
+  border-bottom: 5px solid #d9d7cc;
+  width: 100%; /* Juster bredden efter behov */
+  display: block;
+}
+
+.cv_underoverskrift1 {
+  grid-row: 2 / span 4;
+  grid-column: 1 / span 2;
+  font-family: "poyntertext-romanoneregular";
+  padding-top: 5%;
+  letter-spacing: 5px;
+}
+.p_txt_om_mig1 {
+  font-family: "poyntertextregular";
+  font-size: 0.9rem;
+  padding-top: 2%;
+  letter-spacing: 3px;
+  line-height: 25px;
+}
+
+.cv_underoverskrift2 {
+  grid-row: 7 / span 4;
+  grid-column: 1 / span 2;
+  font-family: "poyntertext-romanoneregular";
+  letter-spacing: 5px;
+}
+.p_txt_om_mig2 {
+  font-family: "poyntertextregular";
+  font-size: 0.9rem;
+  padding-top: 2%;
+  letter-spacing: 3px;
+  line-height: 25px;
+}
+
+.linje3_cv {
+  grid-row: 11;
+  grid-column: 1 / span 3;
+  border-bottom: 5px solid #d9d7cc;
+  width: 100%; /* Juster bredden efter behov */
+}
+
+.cv_underoverskrift3 {
+  grid-row: 12 / span 13;
+  grid-column: 1 / span 2;
+  font-family: "poyntertext-romanoneregular";
+  letter-spacing: 5px;
+  word-break: break-all;
+  padding-top: 5%;
+}
+.p_txt_om_mig3 {
+  font-family: "poyntertextregular";
+  font-size: 0.9rem;
+  padding-top: 2%;
+  letter-spacing: 3px;
+  line-height: 25px;
+}
+
+.linje2_cv {
+  grid-row: 26;
+  grid-column: 1 / span 3;
+  border-bottom: 5px solid #d9d7cc;
+  width: 100%; /* Juster bredden efter behov */
+}
+
+.cv_wrapper2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding-left: 5%;
+  gap: 2px;
+}
+
+.erfaring_cv {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  padding-top: 10%;
+}
+.lloyd {
+  grid-column: 1 / span 3;
+  grid-row: 2;
+}
+.lloyd_txt {
+  grid-column: 1 / span 3;
+  grid-row: 2 / span 2;
+  padding-top: 10%;
+}
+
+.artibus {
+  grid-column: 1 / span 3;
+  grid-row: 4 / span 2;
+  padding-top: 5%;
+}
+.artibus_txt {
+  grid-column: 1 / span 3;
+  grid-row: 4 / span 2;
+  padding-top: 15%;
+}
+
+.baunegaarden {
+  grid-column: 1 / span 3;
+  grid-row: 6 / span 2;
+  padding-top: 5%;
+}
+.baunegaarden_txt {
+  grid-column: 1 / span 3;
+  grid-row: 6 / span 2;
+  padding-top: 20%;
+}
+
+.bo_tikken {
+  grid-column: 1 / span 3;
+  grid-row: 8 / span 2;
+  padding-top: 3%;
+}
+.bo_tikken_txt {
+  grid-column: 1 / span 3;
+  grid-row: 8 / span 2;
+  padding-top: 10%;
+}
+
+.cv_wrapper2_kompetencer {
+  grid-template-rows: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.sprog {
+  padding-top: 5%;
+  grid-row: 1;
+  grid-column: 1;
+}
+.p_txt_sprog {
+  padding-top: 3%;
+}
+.kompetencer {
+  padding-top: 5%;
+  grid-row: 2;
+  grid-column: 1;
+}
+.p_txt_kompetencer {
+  padding-top: 3%;
+}
+.personlige_egenskaber {
+  padding-top: 5%;
+  grid-row: 3;
+  padding-bottom: 5%;
+}
+.p_txt_personlige_egenskaber {
+  padding-top: 3%;
+}
+.linje5_cv {
+  border-bottom: 5px solid #d9d7cc;
+  width: 100%;
+  grid-row: 6;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.linje4_cv {
+  border-bottom: 5px solid #d9d7cc;
+  width: 100%; /* Juster bredden efter behov */
+  display: none;
+}
+
+/* projekter side */
+.projekter_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.projekter_overskrift {
+  grid-row: 1;
+  grid-column: 1 / span 2;
+  color: #d9303e;
+  font-family: "respirablack";
+  font-size: 4.5rem;
+  padding-top: 15%;
+}
+.tema2_projekter {
+  grid-row: 2;
+  grid-column: 1 / span 2;
+}
+.tema2_projekter a {
+  color: #d9d7cc;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 2.1rem;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+.tema3_projekter {
+  grid-row: 3;
+  grid-column: 1 / span 2;
+  padding-top: 0%;
+}
+.tema3_projekter a {
+  color: #d9d7cc;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 2.1rem;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+.tema4_projekter {
+  grid-row: 4;
+  grid-column: 1 / span 2;
+  padding-top: 2%;
+}
+.tema4_projekter a {
+  color: #d9d7cc;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 2.1rem;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+.tema5_projekter {
+  grid-row: 5;
+  grid-column: 1 / span 2;
+  padding-top: 5%;
+}
+.tema5_projekter a {
+  color: #d9d7cc;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 2.1rem;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+
+/* TEMA 1 */ /* TEMA 1 */ /* TEMA 1 */ /* TEMA 1 */ /* TEMA 1 */ /* TEMA 1 */ /* TEMA 1 */ /* TEMA 1 */ /* TEMA 1 */ /* TEMA 1 */ /* TEMA 1 */
+
+.tema1_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+/* layout */
+.tema1_overskrift {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 3;
+}
+/* styling */
+.tema1_overskrift {
+  color: #d9303e;
+  font-family: "respirablack";
+  font-size: 4.5rem;
+  padding-top: 20%;
+}
+
+.linje1_tema1 {
+  grid-row: 3;
+  grid-column: 1 / span 2;
+  border-bottom: 5px solid #d9d7cc;
+  width: 80%; /* Juster bredden efter behov */
+}
+/* layout */
+.underoverskrift1_introuge {
+  grid-row: 4;
+  grid-column: 1 / span 2;
+}
+/* styling */
+.underoverskrift1_introuge {
+  color: #d9d7cc;
+  font-family: "Inter", sans-serif;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  padding-left: 5%;
+}
+/* layout */
+.p_txt_introuge {
+  grid-row: 5 / span 2;
+  grid-column: 1 / span 2;
+}
+/* styling */
+.p_txt_introuge {
+  padding-left: 5%;
+  padding-top: 2%;
+}
+.linje2_tema1 {
+  grid-row: 6;
+  grid-column: 1 / span 2;
+  border-bottom: 5px solid #d9d7cc;
+  width: 80%; /* Justerer bredden */
+}
+
+.tema1_wrapper2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+/* layout */
+.underoverskrift2_hbdua {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+/* styling */
+.underoverskrift2_hbdua {
+  color: #d9d7cc;
+  font-family: "Inter", sans-serif;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  padding-top: 5%;
+}
+/* layout */
+.p_txt_hbdua {
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 7;
+}
+/* styling */
+.p_txt_hbdua {
+  padding-top: 18%;
+}
+/* styling og layout */
+.linje3_tema1 {
+  grid-row: 7;
+  grid-column: 1 / span 2;
+  border-bottom: 5px solid #d9d7cc;
+  width: 100%; /* Justerer bredden */
+}
+
+.tema1_wrapper3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/* layout */
+.underoverskrift3_afleveringer {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+/* styling */
+.underoverskrift3_afleveringer {
+  color: #d9d7cc;
+  font-family: "Inter", sans-serif;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+/* layout */
+.p_txt_afleveringer_01_01_01 {
+  grid-row: 2;
+  grid-column: 1 / span 2;
+}
+
+/* layout */
+.p_txt_afleveringer_01_01_02 {
+  grid-row: 3;
+  grid-column: 1 / span 2;
+}
+/* layout */
+.p_txt_afleveringer_01_01_03 {
+  grid-row: 4;
+  grid-column: 1 / span 2;
+}
+
+.linje4_tema1 {
+  grid-row: 5;
+  grid-column: 1 / span 2;
+  border-bottom: 5px solid #d9d7cc;
+  width: 100%; /* Justerer bredden */
+}
+/* layout */
+.vider_til_tema2_link {
+  padding-left: 8%;
+  padding-top: 5%;
+}
+/* styling */
+.vider_til_tema2_link {
+  color: #d9303e;
+  font-family: "Inter", sans-serif;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* TEMA 2 */
+/* layout */
+
+.tema2_wrapper1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+/* layout */
+.tema2_overskrift {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 3;
+}
+/* styling */
+.tema2_overskrift {
+  color: #d9303e;
+  font-family: "respirablack";
+  font-size: 4.5rem;
+  padding-top: 20%;
+}
+
+.linje1_tema2 {
+  grid-row: 3;
+  grid-column: 1 / span 2;
+  border-bottom: 5px solid #d9d7cc;
+  width: 100%; /* Juster bredden efter behov */
+}
+/* layout */
+.underoverskrift1_g_web {
+  grid-row: 4 / span 2;
+  grid-column: 1 / span 2;
+}
+/* styling */
+.underoverskrift1_g_web {
+  color: #d9d7cc;
+  font-family: "Inter", sans-serif;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  word-wrap: break-word; /* Tilføjet denne regel for linjeskift i lange ord */
+  padding-bottom: 5%;
+}
+/* layout */
+.p_txt_g_web {
+  grid-row: 6 / span 2;
+  grid-column: 1 / span 2;
+}
+/* Styling */
+.p_txt_g_web {
+  padding-left: 5%;
+}
+
+/* layout og styling */
+.linje2_tema2 {
+  grid-row: 7;
+  grid-column: 1 / span 2;
+  border-bottom: 5px solid #d9d7cc;
+  width: 100%; /* Juster bredden efter behov */
+}
+
+.tema2_wrapper2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(14, auto);
+  gap: 10px;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+/* layout */
+.underoverskrift2_g_web {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 3;
+}
+/* styling */
+.underoverskrift2_g_web {
+  color: #d9d7cc;
+  font-family: "Inter", sans-serif;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  padding-top: 5%;
+}
+/* layout */
+.p_txt_g_web_2 {
+  grid-column: 1 / span 2;
+  grid-row: 4 / span 9;
+  line-height: 25px;
+}
+/* styling og layout */
+.linje3_tema2 {
+  grid-row: 14;
+  grid-column: 1 / span 2;
+  border-bottom: 5px solid #d9d7cc;
+  width: 100%; /* Juster bredden efter behov */
+}
+
+.tema2_wrapper3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+/* layout */
+.underoverskrift3_g_web {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
+  padding-top: 5%;
+}
+/* styling */
+.underoverskrift3_g_web {
+  color: #d9d7cc;
+  font-family: "Inter", sans-serif;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+}
+.p_txt_afleveringer_02_01_011 {
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 2;
+}
+/* styling og layout */
+.linje4_tema2 {
+  grid-row: 2;
+  grid-column: 1 / span 2;
+  border-bottom: 5px solid #d9303e;
+  width: 100%; /* Juster bredden efter behov */
+}
+
+/* STUDIESTARTSPRØVE */ /* STUDIESTARTSPRØVE */ /* STUDIESTARTSPRØVE */ /* STUDIESTARTSPRØVE */ /* STUDIESTARTSPRØVE */
+.tema2_wrapper3_studiestartsprove {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(14, auto);
+  gap: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+/* layout */
+.underoverskrift1_studiestartsprove {
+  grid-row: 1 / span 2;
+  grid-column: 1 / span 2;
+  padding-top: 5%;
+}
+/* styling */
+.underoverskrift1_studiestartsprove {
+  color: #d9d7cc;
+  font-family: "Inter", sans-serif;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+.underoverskrift1_2_studiestartsprove {
+  grid-row: 3 / span 4;
+  grid-column: 1 / span 2;
+}
+.p_txt_opgaveformulering_studiestartsprove {
+  padding-top: 5%;
+  line-height: 25px;
+}
+.underoverskrift1_3_studiestartsprove {
+  grid-row: 7;
+  grid-column: 1 / span 2;
+  padding-top: 5%;
+}
+.p_txt_bedstodaf_studiestartsprove {
+  grid-row: 4 / span 3;
+  grid-column: 1 / span 2;
+  padding-top: 5%;
+}
+.underoverskrift1_4_studiestartsprove_div {
+  grid-row: 8 / span 2;
+  grid-column: 1 / span 2;
+  padding-top: 5%;
+}
+.p_txt_afleveret_studiestartsprove {
+  padding-top: 5%;
+}
+.underoverskrift1_5_studiestartsprove {
+  grid-row: 10 / span 2;
+  grid-column: 1 / span 2;
+  padding-top: 5%;
+}
+.p_txt_link_studiestartsprove {
+  padding-top: 5%;
+}
+
+.linje5_tema2 {
+  grid-row: 14;
+  grid-column: 1 / span 2;
+  border-bottom: 5px solid #d9303e;
+  width: 100%; /* Juster bredden efter behov */
+}
+
+/* GALLERI TIL OPGAVE */ /* GALLERI TIL OPGAVE */ /* GALLERI TIL OPGAVE */ /* GALLERI TIL OPGAVE */ /* GALLERI TIL OPGAVE */
+.tema2_wrapper4_galleri {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(32, auto);
+  gap: 10px;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.screenshots_overskrift {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  color: #d9d7cc;
+  font-family: "Inter", sans-serif;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  word-wrap: break-word; /* Tilføjet denne regel for linjeskift i lange ord */
+  padding-top: 5%;
+}
+
+.forside_screenshot {
+  grid-column: 1 / span 2;
+  grid-row: 3 / span 2;
+}
+
+.mincomp_screenshot {
+  grid-column: 1 / span 2;
+  grid-row: 5 / span 2;
+}
+
+.operativsystemer_screenshot1 {
+  grid-column: 1 / span 2;
+  grid-row: 7 / span 4;
+}
+.operativsystemer_screenshot2 {
+  grid-column: 1 / span 2;
+  grid-row: 11 / span 4;
+}
+.komponenter_screenshot1 {
+  grid-column: 1 / span 2;
+  grid-row: 15 / span 4;
+}
+.komponenter_screenshot2 {
+  grid-column: 1 / span 2;
+  grid-row: 19 / span 4;
+}
+.galleri_screenshot1 {
+  grid-column: 1 / span 2;
+  grid-row: 23 / span 4;
+}
+.galleri_screenshot2 {
+  grid-column: 1 / span 2;
+  grid-row: 27 / span 4;
+}
+
+.linje6_tema2 {
+  grid-row: 32;
+  grid-column: 1 / span 2;
+  border-bottom: 5px solid #d9303e;
+  width: 100%; /* Juster bredden efter behov */
+}
+
+/* TEMA 3 */ /* TEMA 3 */ /* TEMA 3 */ /* TEMA 3 */ /* TEMA 3 */ /* TEMA 3 */ /* TEMA 3 */ /* TEMA 3 */ /* TEMA 3 */ /* TEMA 3 */ /* TEMA 3 */
+.tema3_wrapper1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+/* layout */
+.tema3_overskrift {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 3;
+}
+/* styling */
+.tema3_overskrift {
+  color: #d9303e;
+  font-family: "respirablack";
+  font-size: 4.5rem;
+  padding-top: 20%;
+}
+
+.linje1_tema3 {
+  grid-row: 3;
+  grid-column: 1 / span 2;
+  border-bottom: 5px solid #d9d7cc;
+  width: 100%; /* Juster bredden efter behov */
+}
+/* layout */
+.underoverskrift1_UX_UI {
+  grid-row: 4 / span 2;
+  grid-column: 1 / span 2;
+}
+/* styling */
+.underoverskrift1_UX_UI {
+  color: #d9d7cc;
+  font-family: "Inter", sans-serif;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  word-wrap: break-word; /* Tilføjet denne regel for linjeskift i lange ord */
+  padding-bottom: 5%;
+}
+/* layout */
+.p_txt_UX_UI {
+  grid-row: 6 / span 2;
+  grid-column: 1 / span 2;
+}
+/* Styling */
+.p_txt_UX_UI {
+  padding-left: 5%;
+}
+
+/* layout og styling */
+.linje2_tema3 {
+  grid-row: 7;
+  grid-column: 1 / span 2;
+  border-bottom: 5px solid #d9d7cc;
+  width: 100%; /* Juster bredden efter behov */
+}
+
+.tema3_wrapper2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+/* layout */
+.underoverskrift2_UX_UI {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 3;
+}
+/* styling */
+.underoverskrift2_UX_UI {
+  color: #d9d7cc;
+  font-family: "Inter", sans-serif;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  padding-top: 5%;
+}
+/* layout */
+.p_txt_UX_UI_2 {
+  grid-column: 1 / span 2;
+  grid-row: 4 / span 9;
+}
+/* styling og layout */
+.linje3_tema3 {
+  grid-row: 9;
+  grid-column: 1 / span 2;
+  border-bottom: 5px solid #d9d7cc;
+  width: 100%; /* Juster bredden efter behov */
+}
+
+.tema3_wrapper3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+/* layout */
+.underoverskrift3_UX_UI {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
+}
+/* styling */
+.underoverskrift3_UX_UI {
+  color: #d9d7cc;
+  font-family: "Inter", sans-serif;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+.p_txt_afleveringer_03_04_01 {
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 2;
+  padding-top: 5%;
+}
+.p_txt_afleveringer_03_04_02 {
+  grid-column: 1 / span 2;
+  grid-row: 3 / span 2;
+}
+/* styling og layout */
+.linje4_tema3 {
+  grid-row: 4;
+  grid-column: 1 / span 2;
+  border-bottom: 5px solid #d9303e;
+  width: 100%; /* Juster bredden efter behov */
+}
+
+.tema3_wrapper3_pp {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+/* layout */
+.underoverskrift1_pp {
+  grid-row: 1;
+  grid-column: 1 / span 2;
+  padding-top: 5%;
+}
+/* styling */
+.underoverskrift1_pp {
+  color: #d9d7cc;
+  font-family: "Inter", sans-serif;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  word-wrap: break-word; /* Tilføjet denne regel for linjeskift i lange ord */
+}
+
+.underoverskrift1_2_pp {
+  grid-row: 2 / span 7;
+  grid-column: 1 / span 2;
+}
+.p_txt_opgaveformulering_pp {
+  padding-top: 5%;
+}
+
+.underoverskrift1_3_pp_div {
+  grid-row: 9 / span 4;
+  grid-column: 1 / span 2;
+  padding-top: 5%;
+}
+.p_txt_bedstodaf_pp {
+  padding-top: 5%;
+}
+
+.underoverskrift1_4_pp {
+  grid-row: 14;
+  grid-column: 1 / span 2;
+  padding-top: 5%;
+}
+.p_txt_afleveret_pp {
+  padding-top: 5%;
+}
+
+.underoverskrift1_5_pp {
+  grid-row: 15;
+  grid-column: 1 / span 2;
+  padding-top: 5%;
+}
+.p_txt_link_pp {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.linje5_tema3 {
+  grid-row: 16;
+  grid-column: 1 / span 2;
+  border-bottom: 5px solid #d9d7cc;
+  width: 100%; /* Juster bredden efter behov */
+}
+
+.tema3_wrapper4_powerpoint {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* To kolonner som standard */
+  grid-template-rows: repeat(39, auto); /* Fem rækker */
+  gap: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.screenshots_overskrift_powerpoint {
+  grid-row: 1 / span 3;
+  grid-column: 1 / span 2;
+  padding-top: 5%;
+}
+.screenshots_overskrift_powerpoint {
+  color: #d9d7cc;
+  font-family: "Inter", sans-serif;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  word-wrap: break-word; /* Tilføjet denne regel for linjeskift i lange ord */
+}
+
+/* layout */
+.forside_slide_screenshot {
+  grid-column: 1 / span 2;
+  grid-row: 4 / span 4;
+}
+/* styling */
+.forside_slide_screenshot_txt {
+  font-size: 1rem;
+  padding-top: 2%;
+}
+.billede_forside_screenshot img {
+  width: 100%;
+  padding-top: 2%;
+}
+
+.pitch_screenshot {
+  grid-row: 8 / span 4;
+  grid-column: 1 / span 2;
+}
+.pitch_screenshot_txt {
+  font-size: 1rem;
+
+  padding-top: 2%;
+}
+.pitch_screenshot_billede img {
+  width: 100%;
+  padding-top: 2%;
+}
+
+.prototype_desktop_screenshot {
+  grid-row: 12 / span 4;
+  grid-column: 1 / span 2;
+}
+.prototype_desktop_screenshot_txt {
+  font-size: 1rem;
+  padding-top: 2%;
+}
+.prototype_desktop_screenshot img {
+  width: 100%;
+  padding-top: 2%;
+}
+
+.figma_inspi_screenshot {
+  grid-row: 16 / span 4;
+  grid-column: 1 / span 2;
+}
+.figma_inspi_screenshot_txt {
+  font-size: 1rem;
+  padding-top: 2%;
+}
+.figma_inspi_screenshot img {
+  width: 100%;
+  padding-top: 2%;
+}
+
+.lighthouse_test_resultat_desktop_screenshot {
+  grid-row: 20 / span 4;
+  grid-column: 1 / span 2;
+}
+.lighthouse_test_resultat_desktop_screenshot_txt {
+  font-size: 1rem;
+  padding-top: 2%;
+}
+.lighthouse_test_resultat_desktop_screenshot_billede {
+  width: 100%;
+  padding-top: 2%;
+}
+.test_resultat_lighthouse_mobil_screenshot {
+  grid-row: 24 / span 3;
+  grid-column: 1 / span 2;
+}
+.test_resultat_lighthouse_mobil_screenshot_billede img {
+  width: 100%;
+  padding-top: 2%;
+}
+
+.fem_sek_test_slide_screenshot {
+  grid-row: 27 / span 4;
+  grid-column: 1 / span 2;
+}
+.fem_sek_test_slide_txt {
+  font-size: 1rem;
+  padding-top: 2%;
+}
+.fem_sek_test_slide_screenshot_billede img {
+  width: 100%;
+  padding-top: 2%;
+}
+
+.annika_test_slide_screenshot {
+  grid-row: 31 / span 4;
+  grid-column: 1 / span 2;
+}
+.annika_test_slide_txt {
+  font-size: 1rem;
+  padding-top: 2%;
+}
+.annika_test_slide_screenshot_billede img {
+  width: 100%;
+  padding-top: 2%;
+}
+
+.overordnet_set_screenshot {
+  grid-row: 35 / span 3;
+  grid-column: 1 / span 2;
+}
+.overordnet_set_screenshot_txt {
+  font-size: 1rem;
+  padding-top: 2%;
+}
+.overordnet_set_screenshot_billede {
+  width: 100%;
+  padding-top: 2%;
+}
+
+.linje6_tema3 {
+  grid-row: 39;
+  grid-column: 1 / span 2;
+  border-bottom: 5px solid #d9303e;
+  width: 100%; /* Juster bredden efter behov */
+}
+
+.tema3_wrapper3_dokumentation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.underoverskrift1_dokumentation {
+  grid-row: 1;
+  grid-column: 1 / span 2;
+  padding-top: 5%;
+}
+/* styling */
+.underoverskrift1_dokumentation {
+  color: #d9d7cc;
+  font-family: "Inter", sans-serif;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  word-wrap: break-word; /* Tilføjet denne regel for linjeskift i lange ord */
+}
+
+.underoverskrift1_2_dokumentation {
+  grid-row: 2 / span 7;
+  grid-column: 1 / span 2;
+}
+.p_txt_opgaveformulering_dokumentation {
+  padding-top: 5%;
+}
+
+.underoverskrift1_3_dokumentation_div {
+  grid-row: 9 / span 4;
+  grid-column: 1 / span 2;
+  padding-top: 5%;
+}
+.p_txt_bedstodaf_dokumentation {
+  padding-top: 5%;
+}
+
+.underoverskrift1_4_dokumentation {
+  grid-row: 14;
+  grid-column: 1 / span 2;
+  padding-top: 5%;
+}
+.p_txt_afleveret_dokumentation {
+  padding-top: 5%;
+}
+
+.underoverskrift1_5_dokumentation {
+  grid-row: 15;
+  grid-column: 1 / span 2;
+  padding-top: 5%;
+}
+.p_txt_link_dokumentation {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.linje6_1_tema3 {
+  grid-row: 16;
+  grid-column: 1 / span 2;
+  border-bottom: 5px solid #d9d7cc;
+  width: 100%; /* Juster bredden efter behov */
+}
+
+.tema3_wrapper5_dokumentation {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* To kolonner som standard */
+  grid-template-rows: repeat(29, auto); /* Fem rækker */
+  gap: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+/* layout */
+.screenshots_overskrift_dukomentation {
+  grid-row: 1 / span 3;
+  grid-column: 1 / span 2;
+  padding-top: 5%;
+}
+/* styling af denne */
+.screenshots_overskrift_dukomentation {
+  color: #d9d7cc;
+  font-family: "Inter", sans-serif;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  word-wrap: break-word; /* Tilføjet denne regel for linjeskift i lange ord */
+}
+
+.research_ide_tema3 {
+  grid-row: 4 / span 4;
+  grid-column: 1 / span 2;
+}
+.research_ide_tema3_txt {
+  font-size: 1rem;
+  padding-top: 2%;
+}
+.research_ide_tema3_billede img {
+  width: 100%;
+  padding-top: 2%;
+}
+
+.wireframes_desktop_tema3 {
+  grid-row: 8 / span 4;
+  grid-column: 1 / span 2;
+}
+.wireframes_desktop_tema3_txt {
+  font-size: 1rem;
+  padding-top: 2%;
+}
+.wireframes_desktop_tema3_billede img {
+  width: 100%;
+  padding-top: 2%;
+}
+
+.wireframes_mobil_tema3 {
+  grid-row: 12 / span 4;
+  grid-column: 1 / span 2;
+}
+.wireframes_mobil_tema3_txt {
+  font-size: 1rem;
+  padding-top: 2%;
+}
+.wireframes_mobil_tema3_billede img {
+  width: 100%;
+  padding-top: 2%;
+}
+
+.styletile_ux_ui_tema3 {
+  grid-row: 16 / span 4;
+  grid-column: 1 / span 2;
+}
+.styletile_ux_ui_tema3_txt {
+  font-size: 1rem;
+  padding-top: 2%;
+}
+.styletile_ux_ui_tema3_billede {
+  width: 100%;
+  padding-top: 2%;
+}
+
+.udvalgt_kode_tema3 {
+  grid-row: 20 / span 4;
+  grid-column: 1 / span 2;
+}
+.udvalgt_kode_tema3_txt {
+  font-size: 1rem;
+  padding-top: 2%;
+}
+.udvalgt_kode_tema3_billede {
+  width: 100%;
+  padding-top: 2%;
+}
+
+.dokumentation_konklusion_feedback_tema3 {
+  grid-row: 24 / span 4;
+  grid-column: 1 / span 2;
+}
+.dokumentation_konklusion_feedback_tema3_txt {
+  font-size: 1rem;
+  padding-top: 2%;
+}
+.dokumentation_konklusion_feedback_tema3_billede {
+  width: 100%;
+  padding-top: 2%;
+}
+
+.linje7_tema3 {
+  grid-row: 28;
+  grid-column: 1 / span 2;
+  border-bottom: 5px solid #d9303e;
+  width: 100%; /* Juster bredden efter behov */
+}
+
+/* TEMA 4 */ /* TEMA 4 */ /* TEMA 4 */ /* TEMA 4 */ /* TEMA 4 */ /* TEMA 4 */ /* TEMA 4 */ /* TEMA 4 */ /* TEMA 4 */ /* TEMA 4 */ /* TEMA 4 */
+/* layout */
+.tema4_wrapper1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+/* layout */
+.tema4_overskrift {
+  grid-row: 1 / span 3;
+  grid-column: 1 / span 2;
+}
+/* styling */
+.tema4_overskrift {
+  color: #d9303e;
+  font-family: "respirablack";
+  font-size: 4.5rem;
+  padding-top: 20%;
+  padding-bottom: 5%;
+}
+/* styling og layout */
+.linje1_tema4 {
+  grid-row: 3;
+  grid-column: 1 / span 2;
+  border-bottom: 5px solid #d9d7cc;
+  width: 100%; /* Juster bredden efter behov */
+}
+
+/* layout */
+.underoverskrift1_animation {
+  grid-row: 4 / span 3;
+  grid-column: 1 / span 2;
+}
+/* styling */
+.underoverskrift1_animation {
+  color: #d9d7cc;
+  font-family: "Inter", sans-serif;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+
+  word-wrap: break-word; /* Tilføjet denne regel for linjeskift i lange ord */
+}
+/* layout */
+.p_txt_animation {
+  grid-row: 7 / span 2;
+  grid-column: 1 / span 2;
+}
+/* styling */
+.p_txt_animation {
+  padding-left: 5%;
+}
+/* layout og styling */
+.linje2_tema4 {
+  grid-row: 8;
+  grid-column: 1 / span 2;
+  border-bottom: 5px solid #d9d7cc;
+  width: 100%; /* Juster bredden efter behov */
+}
+
+.tema4_wrapper2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+/* layout */
+.underoverskrift2_animation {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 3;
+}
+/* styling */
+.underoverskrift2_animation {
+  color: #d9d7cc;
+  font-family: "Inter", sans-serif;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  padding-top: 5%;
+}
+/* layout */
+.p_txt_animation_2 {
+  grid-column: 1 / span 2;
+  grid-row: 4 / span 9;
+}
+
+/* styling og layout */
+.linje3_tema4 {
+  grid-row: 9;
+  grid-column: 1 / span 2;
+  border-bottom: 5px solid #d9d7cc;
+  width: 100%; /* Juster bredden efter behov */
+}
+
+.tema4_wrapper3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/* layout */
+.underoverskrift3_animation {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+/* styling */
+.underoverskrift3_animation {
+  color: #d9d7cc;
+  font-family: "Inter", sans-serif;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+.p_txt_afleveringer_04_04_01 {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  padding-top: 5%;
+}
+
+/* styling og layout */
+.linje4_tema4 {
+  grid-row: 3;
+  grid-column: 1 / span 2;
+  border-bottom: 5px solid #d9303e;
+  width: 100%; /* Juster bredden efter behov */
+}
+
+/* 04.04.01 animations opgave spil */ /* 04.04.01 animations opgave spil */ /* 04.04.01 animations opgave spil */ /* 04.04.01 animations opgave spil */
+.tema4_wrapper3_opgave_animation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+/* layout */
+.underoverskrift1_opgave_tema4 {
+  grid-row: 1;
+  grid-column: 1 / span 2;
+  padding-top: 5%;
+}
+/* styling */
+.underoverskrift1_opgave_tema4 {
+  color: #d9d7cc;
+  font-family: "Inter", sans-serif;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+.underoverskrift1_2_tema4 {
+  grid-row: 2;
+  grid-column: 1 / span 2;
+}
+
+.underoverskrift1_2_tema4 {
+  grid-row: 2 / span 7;
+  grid-column: 1 / span 2;
+}
+.p_txt_opgaveformulering_tema4 {
+  padding-top: 5%;
+}
+
+.underoverskrift1_3_tema4_div {
+  grid-row: 9 / span 4;
+  grid-column: 1 / span 2;
+  padding-top: 5%;
+}
+.p_txt_bedstodaf_tema4 {
+  padding-top: 5%;
+}
+
+.underoverskrift1_4_tema4 {
+  grid-row: 14;
+  grid-column: 1 / span 2;
+  padding-top: 5%;
+}
+.p_txt_afleveret_opgave_tema4 {
+  padding-top: 5%;
+}
+
+.underoverskrift1_5_opgave_tema4 {
+  grid-row: 15;
+  grid-column: 1 / span 2;
+  padding-top: 5%;
+}
+.p_txt_link_opgave_tema4 {
+  padding-top: 5%;
+}
+
+.linje5_tema4 {
+  grid-row: 16;
+  grid-column: 1 / span 2;
+  border-bottom: 5px solid #d9d7cc;
+  width: 100%; /* Juster bredden efter behov */
+}
+
+.tema4_wrapper4_crowcatch {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* To kolonner som standard */
+  grid-template-rows: repeat(29, auto); /* Fem rækker */
+  gap: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.screenshots_overskrift_crowcatch {
+  grid-row: 1 / span 3;
+  grid-column: 1 / span 2;
+  padding-top: 5%;
+}
+.screenshots_overskrift_crowcatch {
+  color: #d9d7cc;
+  font-family: "Inter", sans-serif;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  word-wrap: break-word; /* Tilføjet denne regel for linjeskift i lange ord */
+}
+
+/* layout */
+.spil_forside_screenshot {
+  grid-column: 1 / span 2;
+  grid-row: 4 / span 4;
+}
+/* styling */
+.spil_forside_screenshot_txt {
+  font-size: 1rem;
+  padding-top: 2%;
+}
+.spil_forside_screenshot_billede img {
+  width: 100%;
+  padding-top: 2%;
+}
+
+.spil_igang_screenshot {
+  grid-row: 8 / span 4;
+  grid-column: 1 / span 2;
+}
+.spil_igang_screenshot_txt {
+  font-size: 1rem;
+  padding-top: 2%;
+}
+.spil_igang_screenshot_billede img {
+  width: 100%;
+  padding-top: 2%;
+}
+
+.asset_screenshot {
+  grid-row: 12 / span 4;
+  grid-column: 1 / span 2;
+}
+.asset_screenshot_txt {
+  font-size: 1rem;
+  padding-top: 2%;
+}
+.asset_screenshot_billede img {
+  width: 100%;
+  padding-top: 2%;
+}
+
+.papirprototype_screenshot {
+  grid-row: 16 / span 4;
+  grid-column: 1 / span 2;
+}
+.papirprototype_screenshot_txt {
+  font-size: 1rem;
+  padding-top: 2%;
+}
+.papirprototype_screenshot_billede img {
+  width: 100%;
+  padding-top: 2%;
+}
+
+.level_complete_screenshot {
+  grid-row: 20 / span 4;
+  grid-column: 1 / span 2;
+}
+.level_complete_screenshot_txt {
+  font-size: 1rem;
+  padding-top: 2%;
+}
+.level_complete_screenshot_billede {
+  width: 100%;
+  padding-top: 2%;
+}
+
+.game_over_screenshot {
+  grid-row: 24 / span 4;
+  grid-column: 1 / span 2;
+}
+.game_over_screenshot_txt {
+  font-size: 1rem;
+  padding-top: 2%;
+}
+.game_over_screenshot_billede img {
+  width: 100%;
+  padding-top: 2%;
+}
+
+.linje6_tema3 {
+  grid-row: 39;
+  grid-column: 1 / span 2;
+  border-bottom: 5px solid #d9303e;
+  width: 100%; /* Juster bredden efter behov */
+}
+
+.linje6_tema4 {
+  grid-row: 29;
+  grid-column: 1 / span 2;
+  border-bottom: 5px solid #d9d7cc;
+  width: 100%; /* Juster bredden efter behov */
+}
+
+/* TEMA 5 */
+.tema5_wrapper1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+/* layout */
+.tema5_overskrift {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 3;
+}
+/* styling */
+.tema5_overskrift {
+  color: #d9303e;
+  font-family: "respirablack";
+  font-size: 4.5rem;
+  padding-top: 20%;
+}
+
+.linje1_tema5 {
+  grid-row: 3;
+  grid-column: 1 / span 2;
+  border-bottom: 5px solid #d9d7cc;
+  width: 100%; /* Juster bredden efter behov */
+}
+/* layout */
+.underoverskrift1_indhold {
+  grid-row: 4 / span 2;
+  grid-column: 1 / span 2;
+}
+/* styling */
+.underoverskrift1_indhold {
+  color: #d9d7cc;
+  font-family: "Inter", sans-serif;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  word-wrap: break-word; /* Tilføjet denne regel for linjeskift i lange ord */
+  padding-bottom: 5%;
+}
+/* layout */
+.p_txt_indhold {
+  grid-row: 6 / span 2;
+  grid-column: 1 / span 2;
+}
+/* Styling */
+.p_txt_indhold {
+  padding-left: 5%;
+}
+
+/* layout og styling */
+.linje2_tema4 {
+  grid-row: 8;
+  grid-column: 1 / span 2;
+  border-bottom: 5px solid #d9d7cc;
+  width: 100%; /* Juster bredden efter behov */
+}
+
+.tema5_wrapper2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+/* layout */
+.underoverskrift2_tema5 {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 3;
+}
+/* styling */
+.underoverskrift2_tema5 {
+  color: #d9d7cc;
+  font-family: "Inter", sans-serif;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  padding-top: 5%;
+}
+/* layout */
+.p_txt_tema5_2 {
+  grid-column: 1 / span 2;
+  grid-row: 4 / span 9;
+}
+/* styling og layout */
+.linje3_tema5 {
+  grid-row: 11;
+  grid-column: 1 / span 2;
+  border-bottom: 5px solid #d9d7cc;
+  width: 100%; /* Juster bredden efter behov */
+}
+
+.tema5_wrapper3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/* layout */
+.underoverskrift3_indhold {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+/* styling */
+.underoverskrift3_indhold {
+  color: #d9d7cc;
+  font-family: "Inter", sans-serif;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+.p_txt_afleveringer_05_05_01 {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  padding-top: 5%;
+}
+.p_txt_afleveringer_05_05_02 {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+  padding-top: 5%;
+}
+/* styling og layout */
+.linje4_tema5 {
+  grid-row: 6;
+  grid-column: 1 / span 2;
+  border-bottom: 5px solid #d9303e;
+  width: 100%; /* Juster bredden efter behov */
+}
+
+.tema5_wrapper3_videosite {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+/* layout */
+.underoverskrift1_videosite {
+  grid-row: 1;
+  grid-column: 1 / span 2;
+  padding-top: 5%;
+}
+/* styling */
+.underoverskrift1_videosite {
+  color: #d9d7cc;
+  font-family: "Inter", sans-serif;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  word-wrap: break-word; /* Tilføjet denne regel for linjeskift i lange ord */
+}
+
+.underoverskrift1_2_videosite {
+  grid-row: 2 / span 7;
+  grid-column: 1 / span 2;
+}
+.p_txt_opgaveformulering_videosite {
+  padding-top: 5%;
+}
+
+.underoverskrift1_3_videosite_div {
+  grid-row: 9 / span 4;
+  grid-column: 1 / span 2;
+  padding-top: 5%;
+}
+.p_txt_bedstodaf_videosite {
+  padding-top: 5%;
+}
+
+.underoverskrift1_4_videosite {
+  grid-row: 14;
+  grid-column: 1 / span 2;
+  padding-top: 5%;
+}
+.p_txt_afleveret_videosite {
+  padding-top: 5%;
+}
+
+.underoverskrift1_5_videosite {
+  grid-row: 15;
+  grid-column: 1 / span 2;
+  padding-top: 5%;
+}
+.p_txt_link_videosite {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.linje5_tema5 {
+  grid-row: 16;
+  grid-column: 1 / span 2;
+  border-bottom: 5px solid #d9d7cc;
+  width: 100%; /* Juster bredden efter behov */
+}
+
+/* VIDEOSITE VIDEOSITEVIDEOSITEVIDEOSITEVIDEOSITEVIDEOSITEVIDEOSITEVIDEOSITEVIDEOSITEVIDEOSITEVIDEOSITEVIDEOSITEVIDEOSITEVIDEOSITE */
+.tema5_wrapper4_virksomhedssite {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+/* layout */
+.underoverskrift1_virksomhedssite {
+  grid-row: 1;
+  grid-column: 1 / span 2;
+  padding-top: 5%;
+}
+/* styling */
+.underoverskrift1_virksomhedssite {
+  color: #d9d7cc;
+  font-family: "Inter", sans-serif;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  word-wrap: break-word; /* Tilføjet denne regel for linjeskift i lange ord */
+}
+
+.underoverskrift1_2_virksomhedssite {
+  grid-row: 2 / span 7;
+  grid-column: 1 / span 2;
+}
+.p_txt_opgaveformulering_virksomhedssite {
+  padding-top: 5%;
+}
+
+.underoverskrift1_3_virksomhedssite_div {
+  grid-row: 9 / span 4;
+  grid-column: 1 / span 2;
+  padding-top: 5%;
+}
+.p_txt_bedstodaf_virksomhedssite {
+  padding-top: 5%;
+}
+
+.underoverskrift1_4_virksomhedssite {
+  grid-row: 14;
+  grid-column: 1 / span 2;
+  padding-top: 5%;
+}
+.p_txt_afleveret_virksomhedssite {
+  padding-top: 5%;
+}
+
+.underoverskrift1_5_virksomhedssite {
+  grid-row: 15;
+  grid-column: 1 / span 2;
+  padding-top: 5%;
+}
+.p_txt_link_virksomhedssite {
+  padding-top: 5%;
+}
+
+.linje6_tema5 {
+  grid-row: 16;
+  grid-column: 1 / span 2;
+  border-bottom: 5px solid #d9d7cc;
+  width: 100%; /* Juster bredden efter behov */
+}
+
+/* VIRKSOMHEDSSITE GALLERI / BILLEDER */
+.tema5_wrapper5_virksomhedssite_billeder {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* To kolonner som standard */
+  grid-template-rows: repeat(29, auto); /* Fem rækker */
+  gap: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.screenshots_overskrift_virksomhedssite {
+  grid-row: 1 / span 3;
+  grid-column: 1 / span 2;
+  padding-top: 5%;
+}
+.screenshots_overskrift_virksomhedssite {
+  color: #d9d7cc;
+  font-family: "Inter", sans-serif;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  word-wrap: break-word; /* Tilføjet denne regel for linjeskift i lange ord */
+}
+
+/* layout */
+.culture_living_forside_screenshot {
+  grid-column: 1 / span 2;
+  grid-row: 4 / span 4;
+}
+/* styling */
+.culture_living_forside_screenshot_txt {
+  font-size: 1rem;
+  padding-top: 2%;
+}
+.culture_living_forside_screenshot_billede img {
+  width: 100%;
+  padding-top: 2%;
+}
+
+.culture_living_inspiration {
+  grid-row: 8 / span 4;
+  grid-column: 1 / span 2;
+}
+.culture_living_inspiration_txt {
+  font-size: 1rem;
+  padding-top: 2%;
+}
+.culture_living_inspiration_billede img {
+  width: 100%;
+  padding-top: 2%;
+}
+
+.culture_living_om_os {
+  grid-row: 12 / span 4;
+  grid-column: 1 / span 2;
+}
+.culture_living_om_os_txt {
+  font-size: 1rem;
+  padding-top: 2%;
+}
+.culture_living_om_os_billede img {
+  width: 100%;
+  padding-top: 2%;
+}
+
+.linje6_tema5 {
+  grid-row: 16;
+  grid-column: 1 / span 2;
+  border-bottom: 5px solid #d9d7cc;
+  width: 100%; /* Juster bredden efter behov */
+}
+
+/* Stil for mindre skærme (mobil) */
+@media screen and (max-width: 767px) {
+  .forside_wrapper1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .logo_forside a {
+    padding-left: 344%;
+    padding-top: 58%;
+    font-family: "grand_stylusregular";
+    display: block;
+    font-size: 3rem;
+    color: #d9d7cc;
+    text-decoration: none;
+  }
+
+  .overskrift_forside1 {
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 4;
+    color: #d9303e;
+    font-family: "respirablack";
+    font-size: 4.5rem;
+    padding-left: 2%;
+    padding-top: 15%;
+  }
+
+  .underoverskrift_forside1 {
+    grid-row: 2 / span 2;
+    grid-column: 2 / span 3;
+    color: #0d0d00;
+    font-family: "poyntertext-romanoneregular";
+    font-size: 1.2rem;
+    padding-left: 38%;
+    padding-top: 20%;
+    padding-right: 1%;
+  }
+
+  .underoverskrift_forside2 {
+    grid-row: 2 / span 2;
+    grid-column: 2 / span 3;
+    color: #0d0d00;
+    font-family: "poyntertext-romanoneregular";
+    font-size: 1.2rem;
+    direction: rtl;
+    padding-top: 20%;
+    padding-right: 4%;
+    letter-spacing: 7px;
+  }
+
+  .linje_forside {
+    border-bottom: 3px solid #d9d7cc;
+    width: 122%; /* Juster bredden efter behov */
+    display: block;
+    padding-top: 2%;
+  }
+
+  .forside_billede {
+    grid-row: 4 / span 3;
+    grid-column: 1 / span 5;
+    position: relative;
+    padding-top: 10%;
+    z-index: 1;
+  }
+  img {
+    width: 100%;
+    display: block;
+  }
+  .tusch {
+    position: absolute;
+    font-family: "grand_stylusregular";
+    color: #d9d7cc;
+    font-size: 3rem;
+    top: 40%; /* Juster denne værdi for at centrere lodret */
+    left: 10%; /* Juster denne værdi for at centrere vandret */
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center; /* Centrer teksten inden for sin container */
+    rotate: 21deg;
+    text-decoration: none;
+    animation: pulseAnimation 8s infinite;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .forside_wrapper1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(27, auto);
+    gap: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .overskrift_forside1 {
+    grid-row: 1 / span 4;
+    grid-column: 1 / span 4;
+    font-size: 8.5rem;
+    padding-top: 10%;
+    padding-left: 0%;
+  }
+
+  .underoverskrift_forside1 {
+    grid-row: 5;
+    grid-column: 3;
+    font-size: 1.5rem;
+    padding-top: 0%;
+    padding-left: 95%;
+  }
+  .underoverskrift_forside2 {
+    grid-row: 5 / span 3;
+    grid-column: 3 / span 3;
+    font-size: 1.5rem;
+    padding-top: 0%;
+    padding-right: 0%;
+  }
+  .forside_billede {
+    grid-row: 8 / span 21;
+    grid-column: 1 / span 4;
+    padding-top: 0%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  main {
+    margin: 0 auto;
+  }
+
+  .forside_wrapper1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(24, auto);
+    gap: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .logo_forside {
+    grid-row: 1;
+    grid-column: 4 / span 2;
+  }
+  .logo_link {
+    display: block; /* Gør hele området klikbart */
+    font-family: "grand_stylusregular";
+    font-size: 8rem;
+    color: #d9d7cc;
+    text-decoration: none;
+    position: relative;
+  }
+  .logo_link img {
+    max-width: 20%; /* Gør logoet responsivt */
+  }
+  .logo_link:hover {
+    color: white;
+  }
+  .logo_forside a {
+    padding-left: 20%;
+    padding-bottom: 20%;
+    padding-top: 10%;
+    display: block;
+    text-decoration: none;
+  }
+
+  .overskrift_forside1 {
+    grid-row: 1 / span 7;
+    grid-column: 1 / span 4;
+    color: #d9303e;
+    font-family: "respirablack";
+    font-size: 13rem;
+    padding-top: 5%;
+    padding-left: 0%;
+  }
+  .underoverskrift_forside1 {
+    grid-row: 6 / span 2;
+    grid-column: 4;
+    font-size: 1.6rem;
+    padding-top: 0%;
+    padding-right: 0%;
+    padding-left: 25%;
+  }
+  .underoverskrift_forside2 {
+    grid-row: 6 / span 6;
+    grid-column: 3 / span 3;
+    font-size: 1.6rem;
+    padding-top: 0%;
+    padding-right: 0%;
+  }
+
+  .linje_forside {
+    border-bottom: 5px solid #d9d7cc;
+    width: 70%; /* Juster bredden efter behov */
+    display: block;
+    padding-top: 2%;
+  }
+  .forside_billede {
+    grid-row: 11 / span 13;
+    grid-column: 1 / span 3;
+    padding-top: 0%;
+    padding-left: 2%;
+  }
+
+  img {
+    width: 95%;
+    display: grid;
+  }
+  .tusch {
+    position: absolute;
+    font-family: "grand_stylusregular";
+    color: #d9d7cc;
+    font-size: 4rem;
+    top: 22%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center; /* Centrer teksten inden for sin container */
+    rotate: 21deg;
+    text-decoration: none;
+    animation: pulseAnimation 5s infinite;
+  }
+
+  @keyframes pulseAnimation {
+    0% {
+      /* transform: scale(0.8); vil formindske elementet med 20%.  */
+      transform: scale(0.8);
+      opacity: 0.8;
+    }
+    50% {
+      /* transform: scale(1.2); vil forstørre elementet med 20%.*/
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      /* transform: scale(0.8); vil formindske elementet med 20%.  */
+      transform: scale(0.8);
+      opacity: 1;
+    }
+  }
+
+  .menu_grid {
+    grid-row: 3;
+    grid-column: 2 / span5;
+    align-self: normal;
+    padding-left: 4%;
+  }
+
+  .linje_forside2 {
+    border-bottom: 5px solid #c52727;
+    width: 100%; /* Juster bredden efter behov */
+    display: block;
+  }
+
+  /* OM MIG SIDE */
+  .om_mig_wrapper1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .overskrift_om_mig1 {
+    grid-row: 1 / span 3;
+    grid-column: 1 / span 4;
+    font-size: 13rem;
+    padding-left: 0%;
+    padding-top: 5%;
+  }
+
+  /* Juster bredden af billedet inde i .om_mig_portaet1 klasse */
+  .om_mig_portaet1 img {
+    width: 84%; /* Juster bredden efter behov */
+    max-width: 100%; /* For at sikre, at bredden ikke overstiger oprindelig størrelse */
+    height: auto; /* Bevarer billedets proportioner */
+    display: block; /* For at håndtere eventuelle marginer eller padding korrekt */
+  }
+  /* Eksempel på grid-placering af .om_mig_portaet1 */
+  .om_mig_portaet1 {
+    grid-row: 2 / span 3;
+    grid-column: 1 / span 2;
+    width: 90%;
+    position: relative;
+    left: -7%;
+    top: 2%;
+  }
+
+  .om_mig_txt_portraet1 {
+    grid-row: 2 / span 2;
+    grid-column: 1 / span 2;
+    font-size: 2.5rem;
+    padding-left: 5%;
+    letter-spacing: 5px;
+    padding-top: 8%;
+  }
+  .om_mig_txt_portraet2 {
+    grid-row: 2;
+    grid-column: 1 / span 2;
+    font-size: 2.5rem;
+    padding-left: 19%;
+    padding-top: 15%;
+  }
+  .om_mig_txt_portraet3 {
+    grid-row: 2 / span 2;
+    grid-column: 1 / span 4;
+    font-size: 2.5rem;
+    padding-left: 20%;
+    padding-top: 11%;
+  }
+  .om_mig_txt_portraet4 {
+    grid-row: 2 / span 2;
+    grid-column: 1 / span 4;
+    font-size: 2.5rem;
+    padding-left: 22%;
+    padding-top: 15%;
+  }
+  .om_mig_txt_portraet5 {
+    grid-row: 3 / span 3;
+    grid-column: 2 / span 4;
+    font-size: 2.5rem;
+    padding-left: 0%;
+    padding-top: 3%;
+  }
+  .om_mig_txt_portraet6 {
+    grid-row: 3;
+    grid-column: 2 / span 4;
+    font-size: 2.5rem;
+    padding-left: 0%;
+    padding-top: 9%;
+  }
+  /* billede */
+  .om_mig_portaet2 {
+    grid-row: 3 / span 2;
+    grid-column: 4 / span 2;
+    position: relative;
+    padding-top: 0%;
+    left: 0%;
+    top: 4%;
+  }
+  .om_mig_portaet2 img {
+    width: 144%;
+    top: 0%;
+    left: 0%;
+  }
+  .linje1_om_mig {
+    position: relative;
+    top: 0%;
+    height: 0px;
+    width: 100%;
+    grid-row: 5;
+    grid-column: 1 / span 4;
+    border-bottom: 8px solid #d9303e;
+    padding-top: 0%;
+  }
+  /* cv */
+  .cv_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(27, auto);
+    gap: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .cv_overskrift {
+    font-size: 12rem;
+    padding-top: 5%;
+    padding-bottom: 3%;
+  }
+  .linje1_cv,
+  .linje2_cv,
+  .linje3_cv {
+    border-bottom: 10px solid #d9d7cc;
+  }
+  .cv_underoverskrift1 {
+    grid-row: 2 / span 4;
+    grid-column: 1 / span 2;
+    font-family: "poyntertext-romanoneregular";
+    padding-top: 5%;
+  }
+  .cv_underoverskrift2 {
+    padding-bottom: 5%;
+  }
+  .cv_underoverskrift3 {
+    grid-row: 12 / span 13;
+    grid-column: 1 / span 3;
+    word-break: normal;
+    padding-top: 2%;
+  }
+
+  .cv_wrapper2_kompetencer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    gap: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .sprog {
+    padding-left: 0%;
+  }
+  .kompetencer {
+    grid-row: 1;
+    grid-column: 2 / span 2;
+  }
+  .personlige_egenskaber {
+    padding-left: 0%;
+    padding-top: 5%;
+    grid-row: 2 / span 3;
+    grid-column: 1 / span 2;
+  }
+
+  .personlige_egenskaber1 {
+    display: inline-block;
+    vertical-align: top; /* Align the tops of the divs */
+    width: 49%; /* Adjust the width as needed */
+  }
+  .personlige_egenskaber2 {
+    display: inline-block;
+    vertical-align: top; /* Align the tops of the divs */
+    width: 41%; /* Adjust the width as needed */
+    margin-left: 9px; /* Adjust the margin between the divs */
+  }
+  p {
+    margin: 2px; /* Remove default margin for paragraphs */
+  }
+
+  .linje4_cv {
+    display: none;
+  }
+  .linje5_cv {
+    border-bottom: 10px solid #d9d7cc;
+    width: 100%;
+    grid-row: 4;
+    grid-column: 1 / span 3;
+  }
+
+  /* projekter side */ /* projekter side */ /* projekter side */ /* projekter side */ /* projekter side */ /* projekter side */
+  .projekter_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .projekter_overskrift {
+    grid-row: 1 / span 3;
+    grid-column: 1 / span 3;
+    font-size: 10rem;
+    padding-top: 20%;
+  }
+  .tema2_projekter {
+    grid-row: 4;
+    grid-column: 1 / span 6;
+  }
+  .tema2_projekter a {
+    font-size: 2.1rem;
+  }
+  .tema3_projekter {
+    grid-row: 4;
+    grid-column: 6 / span 5;
+    padding-top: 0%;
+  }
+  .tema3_projekter a {
+    font-size: 2.1rem;
+  }
+  .tema4_projekter {
+    grid-row: 6;
+    grid-column: 1 / span 5;
+    padding-top: 0%;
+  }
+  .tema4_projekter a {
+    font-size: 2.1rem;
+  }
+  .tema5_projekter {
+    grid-row: 6;
+    grid-column: 6 / span 5;
+    padding-top: 0%;
+  }
+  .tema5_projekter a {
+    font-size: 2.1rem;
+  }
+
+  .tema2_wrapper1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  .tema2_overskrift {
+    font-size: 10rem;
+    padding-top: 10%;
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 3;
+  }
+  .linje1_tema2 {
+    grid-column: 1 / span 3;
+    border-bottom: 10px solid #d9d7cc;
+  }
+  .underoverskrift1_g_web {
+    grid-row: 4 / span 2;
+    grid-column: 1 / span 3;
+    padding-top: 3%;
+  }
+  .p_txt_g_web {
+    padding-left: 2%;
+    grid-row: 5 / span 2;
+    font-size: 1.3rem;
+  }
+  .linje2_tema2 {
+    grid-row: 6;
+    grid-column: 1 / span 3;
+    border-bottom: 10px solid #d9d7cc;
+  }
+
+  .tema2_wrapper2 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .underoverskrift2_g_web {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 2;
+    padding-top: 2%;
+  }
+  .p_txt_g_web_2 {
+    grid-column: 1 / span 2;
+  }
+  .linje3_tema2 {
+    grid-row: 14;
+    grid-column: 1 / span 2;
+    border-bottom: 10px solid #d9d7cc;
+  }
+
+  .tema2_wrapper3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .underoverskrift3_g_web {
+    padding-top: 3%;
+  }
+  .linje4_tema2 {
+    border-bottom: 10px solid #d9303e;
+  }
+
+  .tema2_wrapper3_studiestartsprove {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .underoverskrift1_studiestartsprove,
+  .underoverskrift1_4_studiestartsprove_div,
+  .underoverskrift1_5_studiestartsprove {
+    padding-top: 3%;
+  }
+  .underoverskrift1_2_studiestartsprove,
+  .p_txt_opgaveformulering_studiestartsprove {
+    padding-top: 2%;
+  }
+  .underoverskrift1_3_studiestartsprove,
+  .p_txt_bedstodaf_studiestartsprove,
+  .p_txt_afleveret_studiestartsprove,
+  .p_txt_link_studiestartsprove {
+    padding-top: 2%;
+  }
+  .underoverskrift1_2_studiestartsprove,
+  .underoverskrift1_3_studiestartsprove {
+    grid-column: 1 / span 3;
+  }
+  .linje5_tema2 {
+    grid-column: 1 / span 4;
+    border-bottom: 10px solid #d9d7cc;
+  }
+  .tema2_wrapper4_galleri {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(19, auto);
+  }
+  .screenshots_overskrift {
+    padding-top: 2%;
+    grid-column: 1 / span 3;
+  }
+  .forside_screenshot {
+    padding-left: 4%;
+  }
+  .mincomp_screenshot {
+    grid-column: 3 / span 2;
+    grid-row: 3;
+    padding-left: 5%;
+  }
+  .operativsystemer_screenshot1 {
+    grid-row: 4 / span 4;
+    padding-left: 5%;
+  }
+  .operativsystemer_screenshot2 {
+    grid-row: 8 / span 4;
+    padding-left: 5%;
+  }
+  .komponenter_screenshot1 {
+    grid-column: 3 / span 2;
+    grid-row: 4 / span 4;
+    padding-left: 5%;
+  }
+  .komponenter_screenshot2 {
+    grid-column: 3 / span 2;
+    grid-row: 8 / span 4;
+    padding-left: 5%;
+  }
+  .galleri_screenshot1 {
+    grid-row: 12 / span 4;
+    padding-left: 5%;
+  }
+  .galleri_screenshot2 {
+    grid-column: 3 / span 2;
+    grid-row: 12 / span 4;
+    padding-left: 5%;
+  }
+  .linje6_tema2 {
+    grid-row: 17;
+    grid-column: 1 / span 4;
+    border-bottom: 10px solid #d9303e;
+  }
+
+  /* TEMA3 */ /* TEMA3 */ /* TEMA3 */ /* TEMA3 */ /* TEMA3 */ /* TEMA3 */ /* TEMA3 */ /* TEMA3 */ /* TEMA3 */ /* TEMA3 */ /* TEMA3 */
+  .tema3_wrapper1 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  /* layout */
+  .tema3_overskrift {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 3;
+  }
+  /* styling */
+  .tema3_overskrift {
+    font-size: 10rem;
+    padding-top: 10%;
+  }
+  .linje1_tema3 {
+    grid-row: 3;
+    grid-column: 1 / span 3;
+    border-bottom: 10px solid #d9d7cc;
+    margin-top: 10%;
+  }
+  /* layout */
+  .underoverskrift1_UX_UI {
+    grid-row: 4;
+    grid-column: 1 / span 3;
+  }
+  /* styling */
+  .underoverskrift1_UX_UI {
+    padding-bottom: 0%;
+    padding-top: 3%;
+  }
+  /* layout */
+  .p_txt_UX_UI {
+    grid-row: 5 / span 2;
+    grid-column: 1;
+  }
+  /* Styling */
+  .p_txt_UX_UI {
+    padding-left: 2%;
+    font-size: 1.3rem;
+  }
+  /* layout og styling */
+  .linje2_tema3 {
+    grid-row: 6;
+    grid-column: 1 / span 3;
+    border-bottom: 10px solid #d9d7cc;
+  }
+
+  .tema3_wrapper2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(14, auto);
+    gap: 10px;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  /* layout */
+  .underoverskrift2_UX_UI {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 3;
+  }
+  /* styling */
+  .underoverskrift2_UX_UI {
+    padding-top: 3%;
+    margin: 0px;
+  }
+  /* layout */
+  .p_txt_UX_UI_2 {
+    grid-column: 1 / span 2;
+    grid-row: 4 / span 8;
+    padding-bottom: 0%;
+    line-height: 25px;
+    margin: 0px;
+  }
+  /* styling og layout */
+  .linje3_tema3 {
+    grid-row: 14;
+    grid-column: 1 / span 2;
+    border-bottom: 10px solid #d9d7cc;
+  }
+
+  .tema3_wrapper3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  /* layout */
+  .underoverskrift3_UX_UI {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    padding-top: 5%;
+  }
+  /* styling */
+  .underoverskrift3_UX_UI {
+    font-size: 2.4rem;
+  }
+
+  .p_txt_afleveringer_03_04_01 {
+    grid-row: 3;
+    padding-top: 0%;
+  }
+  .p_txt_afleveringer_03_04_02 {
+    grid-row: 4;
+  }
+  /* styling og layout */
+  .linje4_tema3 {
+    grid-row: 5;
+    grid-column: 1 / span 4;
+    border-bottom: 10px solid #d9303e;
+    width: 100%; /* Juster bredden efter behov */
+  }
+
+  .tema3_wrapper3_pp {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(23, auto);
+    gap: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  /* layout */
+  .underoverskrift1_pp {
+    grid-row: 1 / span 3;
+  }
+  /* styling */
+  .underoverskrift1_pp {
+    font-size: 2.2rem;
+  }
+  .underoverskrift1_2_pp {
+    grid-row: 4 / span 7;
+    grid-column: 1 / span 3;
+  }
+  .p_txt_opgaveformulering_pp {
+    padding-top: 2%;
+    line-height: 25px;
+  }
+
+  .underoverskrift1_3_pp_div {
+    grid-row: 11 / span 4;
+    grid-column: 1 / span 2;
+    padding-top: 2%;
+  }
+  .p_txt_bedstodaf_pp {
+    padding-top: 2%;
+  }
+
+  .underoverskrift1_4_pp {
+    grid-row: 15 / span 2;
+    padding-top: 5%;
+    grid-column: 1;
+  }
+  .p_txt_afleveret_pp {
+    padding-top: 2%;
+  }
+
+  .underoverskrift1_5_pp {
+    grid-row: 17 / span 2;
+    padding-top: 5%;
+    grid-column: 1 / span 2;
+  }
+  .p_txt_link_pp {
+    padding-top: 2%;
+    padding-bottom: 0%;
+  }
+  .underoverskrift1_6_pp {
+    grid-row: 19 / span 2;
+    padding-top: 5%;
+    grid-column: 1 / span 2;
+  }
+  .p_txt_link_pp2 {
+    padding-top: 2%;
+    padding-bottom: 0%;
+  }
+
+  .linje5_tema3 {
+    grid-row: 23;
+    grid-column: 1 / span 4;
+    border-bottom: 10px solid #d9d7cc;
+  }
+
+  /* POWERPOINT OPGAVE OG GALLERI */
+  .tema3_wrapper4_powerpoint {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* To kolonner som standard */
+    grid-template-rows: repeat(24, auto); /* Fem rækker */
+  }
+  .screenshots_overskrift_powerpoint {
+    grid-column: 1 / span 3;
+  }
+  .screenshots_overskrift_powerpoint {
+    padding-top: 5%;
+    font-size: 2.4rem;
+  }
+
+  /* layout */
+  .forside_slide_screenshot {
+    grid-column: 1 / span 2;
+    grid-row: 4 / span 4;
+  }
+  /* styling */
+  .forside_slide_screenshot_txt {
+    font-size: 1rem;
+    padding-left: 10%;
+  }
+  .billede_forside_screenshot img {
+    width: 90%;
+    padding-left: 10%;
+  }
+
+  .pitch_screenshot {
+    grid-row: 4 / span 4;
+    grid-column: 3 / span 2;
+  }
+  .pitch_screenshot_txt {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .pitch_screenshot_billede img {
+    width: 90%;
+    padding-left: 10%;
+  }
+
+  .prototype_desktop_screenshot {
+    grid-row: 9 / span 4;
+    grid-column: 1 / span 2;
+  }
+  .prototype_desktop_screenshot_txt {
+    padding-left: 10%;
+    padding-top: 5%;
+  }
+  .prototype_desktop_screenshot img {
+    width: 90%;
+    padding-left: 10%;
+  }
+
+  .figma_inspi_screenshot {
+    grid-row: 9 / span 4;
+    grid-column: 3 / span 2;
+  }
+  .figma_inspi_screenshot_txt {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+  }
+  .figma_inspi_screenshot img {
+    width: 90%;
+    padding-left: 10%;
+  }
+
+  .lighthouse_test_resultat_desktop_screenshot {
+    grid-row: 12 / span 4;
+  }
+  .lighthouse_test_resultat_desktop_screenshot_txt {
+    padding-left: 10%;
+    padding-top: 2%;
+  }
+  .lighthouse_test_resultat_desktop_screenshot_billede {
+    width: 90%;
+    padding-left: 10%;
+  }
+  .test_resultat_lighthouse_mobil_screenshot {
+    grid-row: 16 / span 4;
+    grid-column: 1 / span 2;
+  }
+  .test_resultat_lighthouse_mobil_screenshot_billede img {
+    width: 89%;
+    padding-top: 7%;
+    padding-left: 10%;
+  }
+
+  .fem_sek_test_slide_screenshot {
+    grid-row: 13 / span 4;
+    grid-column: 3 / span 2;
+  }
+  .fem_sek_test_slide_txt {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .fem_sek_test_slide_screenshot_billede img {
+    width: 90%;
+    padding-left: 10%;
+  }
+
+  .annika_test_slide_screenshot {
+    grid-row: 17 / span 4;
+    grid-column: 3 / span 2;
+  }
+  .annika_test_slide_txt {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .annika_test_slide_screenshot_billede img {
+    width: 90%;
+    padding-left: 10%;
+  }
+
+  .overordnet_set_screenshot {
+    grid-row: 20 / span 2;
+  }
+  .overordnet_set_screenshot_txt {
+    padding-left: 10%;
+  }
+  .overordnet_set_screenshot_billede {
+    width: 90%;
+    padding-left: 10%;
+  }
+
+  .linje6_tema3 {
+    grid-row: 24;
+    grid-column: 1 / span 4;
+    border-bottom: 10px solid #d9303e;
+  }
+
+  .tema3_wrapper3_dokumentation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(17, auto);
+    gap: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  /* layout */
+  .underoverskrift1_dokumentation {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 2;
+    padding-top: 3%;
+  }
+  /* styling */
+  .underoverskrift1_dokumentation {
+    font-size: 2.2rem;
+  }
+  .underoverskrift1_2_dokumentation {
+    grid-row: 3 / span 4;
+    grid-column: 1 / span 3;
+    padding-top: 3%;
+  }
+  .p_txt_opgaveformulering_dokumentation {
+    padding-top: 2%;
+    line-height: 25px;
+  }
+
+  .underoverskrift1_3_dokumentation_div {
+    grid-row: 7 / span 4;
+    grid-column: 1 / span 2;
+    padding-top: 3%;
+  }
+
+  .p_txt_bedstodaf_dokumentation_div {
+    grid-row: 6 / span 4;
+    grid-column: 1 / span 3;
+    padding-top: 3%;
+  }
+  .p_txt_bedstodaf_dokumentation {
+    padding-top: 2%;
+  }
+
+  .underoverskrift1_4_dokumentation {
+    grid-row: 11 / span 2;
+    padding-top: 5%;
+    grid-column: 1;
+  }
+  .p_txt_afleveret_dokumentation {
+    padding-top: 2%;
+  }
+
+  .underoverskrift1_5_dokumentation {
+    grid-row: 13 / span 2;
+    padding-top: 3%;
+    grid-column: 1 / span 2;
+  }
+  .p_txt_link_dokumentation {
+    padding-top: 2%;
+    padding-bottom: 0%;
+  }
+  .linje6_1_tema3 {
+    grid-row: 17;
+    grid-column: 1 / span 4;
+    border-bottom: 10px solid #d9d7cc;
+  }
+
+  .tema3_wrapper5_dokumentation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* To kolonner som standard */
+    grid-template-rows: repeat(20, auto); /* Fem rækker */
+    gap: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  /* layout */
+  .screenshots_overskrift_dukomentation {
+    grid-row: 1 / span 3;
+    grid-column: 1 / span 3;
+  }
+  /* styling af denne */
+  .screenshots_overskrift_dukomentation {
+    font-size: 2.4rem;
+  }
+
+  .research_ide_tema3 {
+    grid-row: 4 / span 6;
+    grid-column: 1 / span 2;
+  }
+  .research_ide_tema3_txt {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+  .research_ide_tema3_billede img {
+    width: 90%;
+    padding-left: 10%;
+  }
+
+  .wireframes_desktop_tema3 {
+    grid-row: 4 / span 6;
+    grid-column: 3 / span 2;
+  }
+  .wireframes_desktop_tema3_txt {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+  .wireframes_desktop_tema3_billede img {
+    width: 90%;
+    padding-left: 10%;
+  }
+
+  .wireframes_mobil_tema3 {
+    grid-row: 10 / span 4;
+  }
+  .wireframes_mobil_tema3_txt {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+  .wireframes_mobil_tema3_billede img {
+    width: 90%;
+    padding-left: 10%;
+  }
+
+  .styletile_ux_ui_tema3 {
+    grid-row: 10 / span 4;
+    grid-column: 3 / span 2;
+  }
+  .styletile_ux_ui_tema3_txt {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+  .styletile_ux_ui_tema3_billede {
+    width: 90%;
+    padding-left: 10%;
+  }
+
+  .udvalgt_kode_tema3 {
+    grid-row: 14 / span 4;
+  }
+  .udvalgt_kode_tema3_txt {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+  .udvalgt_kode_tema3_billede {
+    width: 90%;
+    padding-left: 10%;
+  }
+
+  .dokumentation_konklusion_feedback_tema3 {
+    grid-row: 14 / span 4;
+    grid-column: 3 / span 2;
+  }
+  .dokumentation_konklusion_feedback_tema3_txt {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+  .dokumentation_konklusion_feedback_tema3_billede {
+    width: 90%;
+    padding-left: 10%;
+  }
+
+  .linje7_tema3 {
+    grid-row: 20;
+    grid-column: 1 / span 4;
+    border-bottom: 10px solid #d9303e;
+  }
+}
+
+@font-face {
+  font-family: "moldebold";
+  src: url("fonts/webfontkit-20240104-112632/fontspring-demo-molde-bold-webfont.woff2") format("woff2"), url("fontspring-demo-molde-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "moldecondensed-black";
+  src: url("fonts/webfontkit-20240104-112632/fontspring-demo-molde-condensed-black-webfont.woff2") format("woff2"), url("fontspring-demo-molde-condensed-black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "moldeheavy";
+  src: url("fonts/webfontkit-20240104-112632/fontspring-demo-molde-heavy-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}

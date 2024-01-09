@@ -1,0 +1,148 @@
+/* menu og burger menu */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #bfba9f;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  width: 50%;
+}
+.logo:hover {
+  color: white;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #d9d7cc;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.menu a:hover {
+  color: white;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  display: none; /* Skjul burgermenuen som standard */
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+
+.projekter-item {
+  position: relative;
+}
+
+.projekter-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #bfba9f;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  width: 200px; /* Juster bredden efter behov */
+  padding: 10px; /* Tilføjet padding for mere plads */
+}
+
+.projekter-dropdown li {
+  list-style: none; /* Fjerner punkttegnene */
+  margin: 0;
+}
+
+.projekter-item:hover .projekter-dropdown {
+  display: block;
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    padding: 10px;
+  }
+
+  .projekter-item:hover .projekter-dropdown {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    position: absolute;
+    top: 39px; /* Juster top-værdien efter behov */
+    right: 20px; /* Juster right-værdien efter behov */
+  }
+
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #bfba9f;
+    position: absolute;
+    top: 77px;
+    left: 0;
+    width: 100%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+}
