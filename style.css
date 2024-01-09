@@ -3798,24 +3798,3 @@ img {
     border-bottom: 10px solid #d9303e;
   }
 }
-
-@font-face {
-  font-family: "moldebold";
-  src: url("fonts/webfontkit-20240104-112632/fontspring-demo-molde-bold-webfont.woff2") format("woff2"), url("fontspring-demo-molde-bold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "moldecondensed-black";
-  src: url("fonts/webfontkit-20240104-112632/fontspring-demo-molde-condensed-black-webfont.woff2") format("woff2"), url("fontspring-demo-molde-condensed-black-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "moldeheavy";
-  src: url("fonts/webfontkit-20240104-112632/fontspring-demo-molde-heavy-webfont.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
