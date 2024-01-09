@@ -968,7 +968,7 @@ img {
 }
 /* styling og layout */
 .linje3_tema3 {
-  grid-row: 9;
+  grid-row: 14;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9d7cc;
   width: 100%; /* Juster bredden efter behov */
@@ -1572,6 +1572,7 @@ img {
 }
 .p_txt_opgaveformulering_tema4 {
   padding-top: 5%;
+  line-height: 25px;
 }
 
 .underoverskrift1_3_tema4_div {
@@ -1812,7 +1813,7 @@ img {
 }
 /* styling og layout */
 .linje3_tema5 {
-  grid-row: 12;
+  grid-row: 15;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9d7cc;
   width: 100%; /* Juster bredden efter behov */
@@ -2199,6 +2200,10 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   main {
     margin: 0 auto;
+  }
+
+  p {
+    line-height: 25px;
   }
 
   .forside_wrapper1 {
@@ -3728,6 +3733,7 @@ img {
   }
   .p_txt_opgaveformulering_videosite {
     padding-top: 2%;
+    line-height: 25px;
   }
   .underoverskrift1_3_videosite_div {
     grid-row: 11 / span 4;
