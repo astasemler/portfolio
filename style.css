@@ -420,7 +420,7 @@ img {
   padding-top: 3%;
 }
 .linje5_cv {
-  border-bottom: 5px solid #d9d7cc;
+  border-bottom: 5px solid #d9303e;
   width: 100%;
   grid-row: 6;
   padding-left: 5%;
@@ -428,7 +428,7 @@ img {
 }
 
 .linje4_cv {
-  border-bottom: 5px solid #d9d7cc;
+  border-bottom: 5px solid#d9303e;
   width: 100%; /* Juster bredden efter behov */
   display: none;
 }
@@ -849,7 +849,7 @@ img {
 .linje5_tema2 {
   grid-row: 14;
   grid-column: 1 / span 2;
-  border-bottom: 5px solid #d9303e;
+  border-bottom: 5px solid #d9d7cc;
   width: 100%; /* Juster bredden efter behov */
 }
 
@@ -1028,7 +1028,7 @@ img {
 .underoverskrift3_UX_UI {
   color: #d9d7cc;
   font-family: "Inter", sans-serif;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   text-transform: uppercase;
 }
 .p_txt_afleveringer_03_04_01 {
@@ -1557,7 +1557,7 @@ img {
 .underoverskrift3_animation {
   color: #d9d7cc;
   font-family: "Inter", sans-serif;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   text-transform: uppercase;
 }
 
@@ -1648,7 +1648,7 @@ img {
 .tema4_wrapper4_crowcatch {
   display: grid;
   grid-template-columns: 1fr 1fr; /* To kolonner som standard */
-  grid-template-rows: repeat(29, auto); /* Fem rækker */
+  grid-template-rows: repeat(30, auto); /* Fem rækker */
   gap: 10px;
   padding-left: 5%;
   padding-right: 5%;
@@ -1756,7 +1756,7 @@ img {
 .linje6_tema4 {
   grid-row: 29;
   grid-column: 1 / span 2;
-  border-bottom: 5px solid #d9d7cc;
+  border-bottom: 5px solid #d9303e;
   width: 100%; /* Juster bredden efter behov */
 }
 
@@ -2145,7 +2145,7 @@ img {
 .linje6_tema5_2 {
   grid-row: 17;
   grid-column: 1 / span 2;
-  border-bottom: 5px solid #d9d7cc;
+  border-bottom: 5px solid #d9303e;
   width: 100%; /* Juster bredden efter behov */
 }
 
