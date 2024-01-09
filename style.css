@@ -3310,14 +3310,167 @@ img {
   .tema4_wrapper4_crowcatch {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(19, auto);
   }
   .screenshots_overskrift_crowcatch {
     grid-column: 1 / span 3;
     padding-top: 2%;
   }
+  .spil_forside_screenshot {
+    padding-top: 4%;
+  }
   .spil_igang_screenshot {
     grid-row: 4 / span 4;
     grid-column: 3 / span 2;
+  }
+  .asset_screenshot {
+    grid-row: 8 / span 4;
+    grid-column: 3 / span 2;
+    padding-top: 15%;
+  }
+  .papirprototype_screenshot {
+    grid-row: 8 / span 4;
+    grid-column: 1 / span 2;
+  }
+  .level_complete_screenshot {
+    grid-row: 12 / span 4;
+    padding-top: 2%;
+  }
+  .game_over_screenshot {
+    grid-row: 12 / span 4;
+    grid-column: 3 / span 2;
+  }
+  .linje6_tema4 {
+    grid-row: 18;
+    grid-column: 1 / span 4;
+    border-bottom: 10px solid #d9d7cc;
+  }
+
+  .tema5_wrapper1 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .tema5_overskrift {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 3;
+    font-size: 10rem;
+    padding-top: 10%;
+  }
+  .linje1_tema5 {
+    grid-row: 3;
+    grid-column: 1 / span 3;
+    border-bottom: 10px solid #d9d7cc;
+    margin-top: 10%;
+  }
+  .underoverskrift1_indhold {
+    padding-bottom: 0%;
+    padding-top: 3%;
+    grid-row: 4;
+    grid-column: 1 / span 3;
+  }
+  .p_txt_indhold {
+    padding-left: 2%;
+    grid-row: 5 / span 2;
+    font-size: 1.3rem;
+    margin: 0px;
+  }
+  .linje2_tema4 {
+    grid-row: 6;
+    grid-column: 1 / span 3;
+    border-bottom: 10px solid #d9d7cc;
+  }
+
+  .tema5_wrapper2 {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(14, auto);
+  }
+  .underoverskrift2_tema5 {
+    padding-top: 3%;
+    margin: 0px;
+    grid-column: 1 / span 3;
+  }
+  .p_txt_tema5_2 {
+    grid-column: 1 / span 2;
+    grid-row: 4 / span 8;
+    padding-bottom: 0%;
+    line-height: 25px;
+    margin: 0px;
+  }
+  .linje3_tema5 {
+    grid-row: 14;
+    grid-column: 1 / span 2;
+    border-bottom: 10px solid #d9d7cc;
+  }
+
+  .tema5_wrapper3 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  .underoverskrift3_indhold {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    padding-top: 5%;
+  }
+  .p_txt_afleveringer_05_05_01 {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    padding-top: 0%;
+  }
+  .p_txt_afleveringer_05_05_02 {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+    padding-top: 0%;
+  }
+  .linje4_tema5 {
+    grid-row: 6;
+    grid-column: 1 / span 4;
+    border-bottom: 10px solid #d9303e;
+    width: 100%;
+  }
+
+  .tema5_wrapper3_videosite {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(20, auto);
+  }
+  .underoverskrift1_videosite {
+    grid-row: 1 / span 3;
+  }
+  .underoverskrift1_2_videosite {
+    grid-row: 4 / span 7;
+    grid-column: 1 / span 3;
+    padding-top: 3%;
+  }
+  .p_txt_opgaveformulering_videosite {
+    padding-top: 2%;
+  }
+  .underoverskrift1_3_videosite_div {
+    grid-row: 11 / span 4;
+    grid-column: 1 / span 2;
+    padding-top: 3%;
+  }
+  .p_txt_bedstodaf_videosite {
+    padding-top: 2%;
+  }
+  .underoverskrift1_4_videosite {
+    grid-row: 15 / span 2;
+    padding-top: 3%;
+    grid-column: 1 / span 2;
+  }
+  .p_txt_afleveret_videosite {
+    padding-top: 2%;
+  }
+  .underoverskrift1_5_videosite {
+    grid-row: 17 / span 2;
+    padding-top: 3%;
+    grid-column: 1 / span 2;
+  }
+  .p_txt_link_videosite {
+    padding-top: 2%;
+  }
+  .linje5_tema4 {
+    grid-row: 19;
+    grid-column: 1 / span 4;
+    border-bottom: 10px solid #d9d7cc;
   }
 }
 
