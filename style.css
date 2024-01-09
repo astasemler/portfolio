@@ -1106,6 +1106,13 @@ img {
   padding-top: 5%;
   padding-bottom: 5%;
 }
+.underoverskrift1_6_pp {
+  grid-column: 1 / span 2;
+  padding-top: 5%;
+}
+.p_txt_link_pp2 {
+  padding-top: 5%;
+}
 .linje5_tema3 {
   grid-row: 16;
   grid-column: 1 / span 2;
@@ -1286,6 +1293,11 @@ img {
   padding-top: 5%;
 }
 
+.p_txt_bedstodaf_dokumentation_div {
+  grid-column: 1 / span 2;
+  padding-top: 5%;
+}
+
 .underoverskrift1_3_dokumentation_div {
   grid-row: 9 / span 4;
   grid-column: 1 / span 2;
@@ -1296,7 +1308,7 @@ img {
 }
 
 .underoverskrift1_4_dokumentation {
-  grid-row: 14;
+  grid-row: 10;
   grid-column: 1 / span 2;
   padding-top: 5%;
 }
@@ -1305,7 +1317,7 @@ img {
 }
 
 .underoverskrift1_5_dokumentation {
-  grid-row: 15;
+  grid-row: 11;
   grid-column: 1 / span 2;
   padding-top: 5%;
 }
@@ -1314,7 +1326,7 @@ img {
   padding-bottom: 5%;
 }
 .linje6_1_tema3 {
-  grid-row: 16;
+  grid-row: 12;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9d7cc;
   width: 100%; /* Juster bredden efter behov */
@@ -1627,7 +1639,7 @@ img {
 }
 
 .linje5_tema4 {
-  grid-row: 16;
+  grid-row: 17;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9d7cc;
   width: 100%; /* Juster bredden efter behov */
@@ -1837,7 +1849,7 @@ img {
 }
 /* styling og layout */
 .linje3_tema5 {
-  grid-row: 11;
+  grid-row: 12;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9d7cc;
   width: 100%; /* Juster bredden efter behov */
@@ -1856,12 +1868,13 @@ img {
 .underoverskrift3_indhold {
   grid-column: 1 / span 2;
   grid-row: 1;
+  padding-top: 5%;
 }
 /* styling */
 .underoverskrift3_indhold {
   color: #d9d7cc;
   font-family: "Inter", sans-serif;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   text-transform: uppercase;
 }
 
@@ -1877,7 +1890,7 @@ img {
 }
 /* styling og layout */
 .linje4_tema5 {
-  grid-row: 6;
+  grid-row: 4;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9303e;
   width: 100%; /* Juster bredden efter behov */
@@ -2060,7 +2073,7 @@ img {
 }
 
 .linje6_tema5 {
-  grid-row: 16;
+  grid-row: 17;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9d7cc;
   width: 100%; /* Juster bredden efter behov */
@@ -2070,7 +2083,7 @@ img {
 .tema5_wrapper5_virksomhedssite_billeder {
   display: grid;
   grid-template-columns: 1fr 1fr; /* To kolonner som standard */
-  grid-template-rows: repeat(29, auto); /* Fem rækker */
+  grid-template-rows: repeat(18, auto); /* Fem rækker */
   gap: 10px;
   padding-left: 5%;
   padding-right: 5%;
@@ -2129,8 +2142,8 @@ img {
   padding-top: 2%;
 }
 
-.linje6_tema5 {
-  grid-row: 16;
+.linje6_tema5_2 {
+  grid-row: 17;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9d7cc;
   width: 100%; /* Juster bredden efter behov */
