@@ -210,7 +210,7 @@ img {
   grid-column: 1 / span 4;
   font-family: "poyntertext-romanoneregular";
   font-size: 1.2rem;
-  padding-left: 30%;
+  padding-left: 28%;
   padding-top: 27%;
   letter-spacing: 5px;
 }
@@ -219,7 +219,7 @@ img {
   grid-column: 1 / span 4;
   font-family: "poyntertext-romanoneregular";
   font-size: 1.2rem;
-  padding-left: 54%;
+  padding-left: 53%;
   padding-top: 33%;
   letter-spacing: 5px;
 }
@@ -229,7 +229,7 @@ img {
   grid-column: 1 / span 2;
   width: 150%;
   position: relative;
-  left: -37%;
+  left: -41%;
 }
 .om_mig_portaet2 {
   grid-row: 2 / span 2;
@@ -1922,7 +1922,6 @@ img {
 .p_txt_bedstodaf_videosite {
   padding-top: 5%;
 }
-
 .underoverskrift1_4_videosite {
   grid-row: 14;
   grid-column: 1 / span 2;
@@ -1931,7 +1930,6 @@ img {
 .p_txt_afleveret_videosite {
   padding-top: 5%;
 }
-
 .underoverskrift1_5_videosite {
   grid-row: 15;
   grid-column: 1 / span 2;
@@ -1943,6 +1941,60 @@ img {
 }
 .linje5_tema5 {
   grid-row: 16;
+  grid-column: 1 / span 2;
+  border-bottom: 5px solid #d9d7cc;
+  width: 100%; /* Juster bredden efter behov */
+}
+
+.tema5_wrapper3_2_videosite_billeder {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* To kolonner som standard */
+  grid-template-rows: repeat(13, auto); /* Fem rækker */
+  gap: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.screenshots_overskrift_videosite {
+  grid-row: 1 / span 3;
+  grid-column: 1 / span 2;
+  padding-top: 5%;
+}
+.screenshots_overskrift_videosite {
+  color: #d9d7cc;
+  font-family: "Inter", sans-serif;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  word-wrap: break-word; /* Tilføjet denne regel for linjeskift i lange ord */
+}
+
+/* layout */
+.videosite_screenshot1 {
+  grid-column: 1 / span 2;
+  grid-row: 4 / span 4;
+}
+/* styling */
+.videosite_screenshot1_txt {
+  font-size: 1rem;
+  padding-top: 2%;
+}
+.videosite_screenshot1_billede img {
+  width: 100%;
+  padding-top: 2%;
+}
+.videosite_screenshot2 {
+  grid-row: 8 / span 4;
+  grid-column: 1 / span 2;
+}
+.videosite_screenshot2_txt {
+  font-size: 1rem;
+  padding-top: 2%;
+}
+.videosite_screenshot2_billede img {
+  width: 100%;
+  padding-top: 2%;
+}
+.linje6_2_tema5 {
+  grid-row: 13;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9d7cc;
   width: 100%; /* Juster bredden efter behov */
@@ -3469,6 +3521,82 @@ img {
   }
   .linje5_tema4 {
     grid-row: 19;
+    grid-column: 1 / span 4;
+    border-bottom: 10px solid #d9d7cc;
+  }
+
+  .screenshots_overskrift_videosite {
+    padding-top: 2%;
+  }
+  .linje6_2_tema5 {
+    border-bottom: 10px solid #d9d7cc;
+  }
+
+  .tema5_wrapper4_virksomhedssite {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(21, auto);
+  }
+  .underoverskrift1_virksomhedssite {
+    grid-row: 1 / span 3;
+  }
+  .underoverskrift1_2_virksomhedssite {
+    grid-row: 4 / span 7;
+    grid-column: 1 / span 3;
+    padding-top: 3%;
+  }
+  .p_txt_opgaveformulering_virksomhedssite {
+    padding-top: 2%;
+  }
+  .underoverskrift1_3_virksomhedssite_div {
+    grid-row: 11 / span 4;
+    grid-column: 1 / span 2;
+    padding-top: 3%;
+  }
+  .p_txt_bedstodaf_virksomhedssite {
+    padding-top: 2%;
+  }
+  .underoverskrift1_4_virksomhedssite {
+    grid-row: 15 / span 2;
+    padding-top: 3%;
+    grid-column: 1 / span 2;
+  }
+  .p_txt_afleveret_virksomhedssite {
+    padding-top: 2%;
+  }
+  .underoverskrift1_5_virksomhedssite {
+    grid-row: 17 / span 2;
+    padding-top: 3%;
+    grid-column: 1 / span 2;
+  }
+  .p_txt_link_virksomhedssite {
+    padding-top: 2%;
+  }
+  .linje6_tema5 {
+    grid-row: 21;
+    grid-column: 1 / span 4;
+    border-bottom: 10px solid #d9d7cc;
+  }
+
+  .tema5_wrapper5_virksomhedssite_billeder {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(15, auto);
+  }
+  .screenshots_overskrift_virksomhedssite {
+    grid-column: 1 / span 3;
+    padding-top: 3%;
+  }
+  .culture_living_forside_screenshot {
+    padding-top: 5%;
+  }
+  .culture_living_inspiration {
+    grid-row: 7 / span 4;
+    grid-column: 3 / span 2;
+  }
+  .culture_living_om_os {
+    grid-row: 8 / span 4;
+  }
+  .linje6_tema5_2 {
+    grid-row: 14;
     grid-column: 1 / span 4;
     border-bottom: 10px solid #d9d7cc;
   }
