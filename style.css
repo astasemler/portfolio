@@ -1469,7 +1469,7 @@ img {
 .tema4_wrapper2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(19, auto);
   gap: 10px;
   padding-right: 5%;
   padding-left: 5%;
@@ -1491,12 +1491,12 @@ img {
 /* layout */
 .p_txt_animation_2 {
   grid-column: 1 / span 2;
-  grid-row: 4 / span 9;
+  grid-row: 4 / span 18;
 }
 
 /* styling og layout */
 .linje3_tema4 {
-  grid-row: 9;
+  grid-row: 23;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9d7cc;
   width: 100%; /* Juster bredden efter behov */
@@ -3348,7 +3348,7 @@ img {
   .p_txt_bedstodaf_dokumentation_div {
     grid-row: 6 / span 4;
     grid-column: 1 / span 3;
-    padding-top: 3%;
+    padding-top: 7%;
   }
   .p_txt_bedstodaf_dokumentation {
     padding-top: 2%;
