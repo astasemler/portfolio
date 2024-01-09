@@ -783,6 +783,7 @@ img {
   grid-row: 4 / span 3;
   grid-column: 1 / span 2;
   padding-top: 5%;
+  line-height: 25px;
 }
 .underoverskrift1_4_studiestartsprove_div {
   grid-row: 8 / span 2;
@@ -791,6 +792,7 @@ img {
 }
 .p_txt_afleveret_studiestartsprove {
   padding-top: 5%;
+  line-height: 25px;
 }
 .underoverskrift1_5_studiestartsprove {
   grid-row: 10 / span 2;
@@ -935,7 +937,7 @@ img {
 .tema3_wrapper2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(30, auto);
   gap: 10px;
   padding-right: 5%;
   padding-left: 5%;
@@ -956,11 +958,12 @@ img {
 /* layout */
 .p_txt_UX_UI_2 {
   grid-column: 1 / span 2;
-  grid-row: 4 / span 9;
+  grid-row: 4 / span 24;
+  line-height: 25px;
 }
 /* styling og layout */
 .linje3_tema3 {
-  grid-row: 14;
+  grid-row: 29;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9d7cc;
   width: 100%;
@@ -1021,7 +1024,7 @@ img {
 .underoverskrift1_pp {
   color: #d9d7cc;
   font-family: "Inter", sans-serif;
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   text-transform: uppercase;
   word-wrap: break-word; /* Tilføjet denne regel for linjeskift i lange ord */
 }
@@ -1032,6 +1035,7 @@ img {
 }
 .p_txt_opgaveformulering_pp {
   padding-top: 5%;
+  line-height: 25px;
 }
 
 .underoverskrift1_3_pp_div {
@@ -1246,6 +1250,7 @@ img {
 }
 .p_txt_opgaveformulering_dokumentation {
   padding-top: 5%;
+  line-height: 25px;
 }
 
 .p_txt_bedstodaf_dokumentation_div {
@@ -1260,6 +1265,7 @@ img {
 }
 .p_txt_bedstodaf_dokumentation {
   padding-top: 5%;
+  line-height: 25px;
 }
 
 .underoverskrift1_4_dokumentation {
@@ -1484,6 +1490,7 @@ img {
 .p_txt_animation_2 {
   grid-column: 1 / span 2;
   grid-row: 4 / span 18;
+  line-height: 25px;
 }
 
 /* styling og layout */
@@ -1782,7 +1789,7 @@ img {
 .tema5_wrapper2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(25, auto);
   gap: 10px;
   padding-right: 5%;
   padding-left: 5%;
@@ -1803,11 +1810,12 @@ img {
 /* layout */
 .p_txt_tema5_2 {
   grid-column: 1 / span 2;
-  grid-row: 4 / span 9;
+  grid-row: 4 / span 20;
+  line-height: 25px;
 }
 /* styling og layout */
 .linje3_tema5 {
-  grid-row: 15;
+  grid-row: 24;
   grid-column: 1 / span 2;
   border-bottom: 5px solid #d9d7cc;
   width: 100%;
@@ -1883,6 +1891,7 @@ img {
 }
 .p_txt_opgaveformulering_videosite {
   padding-top: 5%;
+  line-height: 25px;
 }
 
 .underoverskrift1_3_videosite_div {
@@ -1900,6 +1909,7 @@ img {
 }
 .p_txt_afleveret_videosite {
   padding-top: 5%;
+  line-height: 25px;
 }
 .underoverskrift1_5_videosite {
   grid-row: 15;
@@ -2001,6 +2011,7 @@ img {
 }
 .p_txt_opgaveformulering_virksomhedssite {
   padding-top: 5%;
+  line-height: 25px;
 }
 
 .underoverskrift1_3_virksomhedssite_div {
@@ -2019,6 +2030,7 @@ img {
 }
 .p_txt_afleveret_virksomhedssite {
   padding-top: 5%;
+  line-height: 25px;
 }
 
 .underoverskrift1_5_virksomhedssite {
