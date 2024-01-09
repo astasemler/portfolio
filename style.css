@@ -145,7 +145,6 @@ img {
   transform: translate(-50%, -50%);
   z-index: 2;
   text-align: center; /* Centrer teksten inden for sin container */
-  rotate: 21deg;
   text-decoration: none;
   animation: pulseAnimation 8s infinite;
 }
@@ -2192,13 +2191,16 @@ img {
     transform: translate(-50%, -50%);
     z-index: 2;
     text-align: center; /* Centrer teksten inden for sin container */
-    rotate: 21deg;
     text-decoration: none;
     animation: pulseAnimation 8s infinite;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  main {
+    margin: 0 auto;
+  }
+
   .forside_wrapper1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -2339,6 +2341,10 @@ img {
     padding-left: 1%;
   }
 
+  .tusch {
+    left: 18%;
+  }
+
   .projekter_wrapper {
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
@@ -2361,6 +2367,124 @@ img {
     grid-row: 6;
     grid-column: 1 / span 2;
     padding-top: 0%;
+  }
+
+  .tema2_wrapper1 {
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .tema2_overskrift {
+    padding-top: 10%;
+    font-size: 8.5rem;
+  }
+  .underoverskrift1_g_web {
+    padding-bottom: 0%;
+    padding-top: 2%;
+  }
+  .p_txt_g_web {
+    padding-left: 0%;
+    grid-row: 5 / span 2;
+  }
+  .linje2_tema2 {
+    grid-row: 6;
+  }
+
+  .tema3_wrapper1 {
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .tema3_overskrift {
+    padding-top: 10%;
+    font-size: 8.5rem;
+  }
+  .underoverskrift1_UX_UI {
+    padding-bottom: 12%;
+    padding-top: 2%;
+  }
+  .p_txt_UX_UI {
+    padding-left: 0%;
+    grid-row: 5 / span 2;
+  }
+  .linje2_tema3 {
+    grid-row: 6;
+  }
+  .tema3_wrapper3 {
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .underoverskrift3_UX_UI {
+    font-size: 2.4rem;
+  }
+  .p_txt_afleveringer_03_04_01 {
+    padding-top: 0%;
+  }
+  .linje4_tema3 {
+    grid-row: 3;
+  }
+  .linje7_tema3 {
+    grid-row: 29;
+  }
+
+  .tema4_wrapper1 {
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .tema4_overskrift {
+    padding-top: 10%;
+    font-size: 8.5rem;
+  }
+  .underoverskrift1_animation {
+    padding-bottom: 12%;
+    padding-top: 2%;
+  }
+  .p_txt_animation {
+    padding-left: 0%;
+    grid-row: 5 / span 2;
+  }
+  .linje2_tema4 {
+    grid-row: 6;
+  }
+  .tema4_wrapper3 {
+    grid-template-rows: 1fr 1fr;
+  }
+  .underoverskrift3_animation {
+    font-size: 2.4rem;
+  }
+  .p_txt_afleveringer_04_04_01 {
+    padding-top: 0%;
+  }
+  .linje4_tema4 {
+    grid-row: 2;
+  }
+
+  .tema5_wrapper1 {
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .tema5_overskrift {
+    padding-top: 10%;
+    font-size: 8.5rem;
+  }
+  .underoverskrift1_indhold {
+    padding-bottom: 12%;
+    padding-top: 2%;
+  }
+  .p_txt_indhold {
+    padding-left: 0%;
+    grid-row: 5 / span 2;
+  }
+  .linje2_tema4 {
+    grid-row: 6;
+  }
+  .tema5_wrapper3 {
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .underoverskrift3_indhold {
+    font-size: 2.4rem;
+  }
+  .p_txt_afleveringer_05_05_01 {
+    padding-top: 2%;
+  }
+  .p_txt_afleveringer_05_05_02 {
+    padding-top: 2%;
+  }
+  .linje4_tema5 {
+    grid-row: 4;
   }
 }
 
@@ -2458,14 +2582,12 @@ img {
     font-family: "grand_stylusregular";
     color: #d9d7cc;
     font-size: 4rem;
-    top: 22%;
+    top: 40%;
     left: 15%;
     transform: translate(-50%, -50%);
     z-index: 2;
     text-align: center; /* Centrer teksten inden for sin container */
-    rotate: 21deg;
     text-decoration: none;
-    animation: pulseAnimation 5s infinite;
   }
 
   @keyframes pulseAnimation {
