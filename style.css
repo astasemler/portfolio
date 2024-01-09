@@ -75,16 +75,6 @@ footer {
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-.logo_forside a {
-  padding-left: 344%;
-  padding-top: 58%;
-  font-family: "grand_stylusregular";
-  display: block;
-  font-size: 3rem;
-  color: #d9d7cc;
-  text-decoration: none;
-}
-
 .overskrift_forside1 {
   grid-row: 2;
   grid-column: 1 / span 4;
@@ -135,6 +125,8 @@ img {
   width: 100%;
   display: block;
 }
+
+/* noget af dette har jeg fået hjælp af Chat-GPT til, bl.a. at skabe animationen, hvordan jeg kunne placere classen .tusch som jeg ønskede, etc. */
 .tusch {
   position: absolute;
   font-family: "grand_stylusregular";
@@ -1085,8 +1077,8 @@ img {
 
 .tema3_wrapper4_powerpoint {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* To kolonner som standard */
-  grid-template-rows: repeat(39, auto); /* Fem rækker */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(39, auto);
   gap: 10px;
   padding-left: 5%;
   padding-right: 5%;
@@ -1297,8 +1289,8 @@ img {
 
 .tema3_wrapper5_dokumentation {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* To kolonner som standard */
-  grid-template-rows: repeat(29, auto); /* Fem rækker */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(29, auto);
   gap: 10px;
   padding-left: 5%;
   padding-right: 5%;
@@ -1611,8 +1603,8 @@ img {
 
 .tema4_wrapper4_crowcatch {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* To kolonner som standard */
-  grid-template-rows: repeat(30, auto); /* Fem rækker */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(30, auto);
   gap: 10px;
   padding-left: 5%;
   padding-right: 5%;
@@ -1925,8 +1917,8 @@ img {
 
 .tema5_wrapper3_2_videosite_billeder {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* To kolonner som standard */
-  grid-template-rows: repeat(13, auto); /* Fem rækker */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(13, auto);
   gap: 10px;
   padding-left: 5%;
   padding-right: 5%;
@@ -2046,8 +2038,8 @@ img {
 /* VIRKSOMHEDSSITE GALLERI / BILLEDER */
 .tema5_wrapper5_virksomhedssite_billeder {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* To kolonner som standard */
-  grid-template-rows: repeat(18, auto); /* Fem rækker */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(18, auto);
   gap: 10px;
   padding-left: 5%;
   padding-right: 5%;
@@ -2064,6 +2056,7 @@ img {
   text-transform: uppercase;
   word-wrap: break-word; /* Tilføjet denne regel for linjeskift i lange ord */
 }
+/* word-wrap: break-word har jeg fået hjælp til af chat-gtp */
 
 /* layout */
 .culture_living_forside_screenshot {
@@ -2119,16 +2112,6 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  }
-
-  .logo_forside a {
-    padding-left: 344%;
-    padding-top: 58%;
-    font-family: "grand_stylusregular";
-    display: block;
-    font-size: 3rem;
-    color: #d9d7cc;
-    text-decoration: none;
   }
 
   .overskrift_forside1 {
@@ -2513,33 +2496,6 @@ img {
     padding-left: 5%;
     padding-right: 5%;
   }
-
-  .logo_forside {
-    grid-row: 1;
-    grid-column: 4 / span 2;
-  }
-  .logo_link {
-    display: block; /* Gør hele området klikbart */
-    font-family: "grand_stylusregular";
-    font-size: 8rem;
-    color: #d9d7cc;
-    text-decoration: none;
-    position: relative;
-  }
-  .logo_link img {
-    max-width: 20%; /* Gør logoet responsivt */
-  }
-  .logo_link:hover {
-    color: white;
-  }
-  .logo_forside a {
-    padding-left: 20%;
-    padding-bottom: 20%;
-    padding-top: 10%;
-    display: block;
-    text-decoration: none;
-  }
-
   .overskrift_forside1 {
     grid-row: 1 / span 7;
     grid-column: 1 / span 4;
@@ -2644,6 +2600,7 @@ img {
     padding-top: 5%;
   }
 
+  /* her har jeg fået hjælp af Chat-GTP til at få begge billeder placeret og rykket rundt som jeg ønskede, bl.a. ved at rbuge position, left,  top, etc */
   /* Juster bredden af billedet inde i .om_mig_portaet1 klasse */
   .om_mig_portaet1 img {
     width: 84%; /* Juster bredden efter behov */
@@ -2785,7 +2742,7 @@ img {
     grid-row: 2 / span 3;
     grid-column: 1 / span 2;
   }
-
+  /* Her har jeg fået hjælp / brugt Chat-GTP til at få i desktopversion til at stå ved siden af hinanden i mit grid da i telefon de står over hinanden */
   .personlige_egenskaber1 {
     display: inline-block;
     vertical-align: top; /* Align the tops of the divs */
@@ -3181,8 +3138,8 @@ img {
   /* POWERPOINT OPGAVE OG GALLERI */
   .tema3_wrapper4_powerpoint {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; /* To kolonner som standard */
-    grid-template-rows: repeat(24, auto); /* Fem rækker */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(24, auto);
   }
   .screenshots_overskrift_powerpoint {
     grid-column: 1 / span 3;
@@ -3380,8 +3337,8 @@ img {
 
   .tema3_wrapper5_dokumentation {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; /* To kolonner som standard */
-    grid-template-rows: repeat(20, auto); /* Fem rækker */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(20, auto);
     gap: 10px;
     padding-left: 5%;
     padding-right: 5%;

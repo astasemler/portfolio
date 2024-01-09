@@ -71,6 +71,7 @@ nav {
   position: relative;
 }
 
+/* dette kode som skaber dropdown effekt i menuen har jeg fået hjælp af Chat-GPT til, så jeg kunne lave en dropdownmenu */
 .projekter-dropdown {
   display: none;
   position: absolute;
